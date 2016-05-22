@@ -614,11 +614,11 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces Training S02E04
+%	OpenCup GrandPrix of Japan
 %
 %----------------------------------------------------------------------------------------
 \newpage
-\subsection{OpenCup GrandPrix of Japan (5 solved)}
+\subsection{OpenCup GrandPrix of Japan (5 solved) + DONE}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
@@ -779,9 +779,9 @@ int main() {
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче необходимо найти все вхождения радостных и грустный смайликов и вывести в ответе каких больше. Решается поиском подстроки в строке. Сложность $O(N * M)$.
+В этой задаче необходимо найти все вхождения радостных и грустный смайликов и вывести в ответе каких больше. Решается поиском подстроки в строке. Сложность $O(N * M)$. \\
 
-\newpage
+%\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
 str = gets
@@ -797,6 +797,79 @@ else
 end
 \end{lstlisting}
 
+
+\newpage
+\textbf{{\large Задача L - Rogue Language}} \\
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Japan/L.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+В этой задаче нужно понять как меняются символы и просто сделать замену всех символов по составленному словарю замен. Сложность $O(1)$. \\
+
+%\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Perl]
+#!/usr/bin/perl
+my %h = (
+		a => "a", b => "bac",c => "cad",e => "e",f => "feg",
+		g => "geh",h => "hij",i => "i",j => "jik",k => "kil",
+		l => "lim",m => "mon",n => "nop",o => "o",p => "poq",
+		q => "qor",r => "ros",s => "sut",t => "tuv",u => "u",
+		v => "vuw",w => "wux",x => "xuy",y => "yuz",z => "zuz");
+my $a = <>;
+chomp $a;
+my $res = "";
+for my $i (split "", $a) {
+	$res .= $h{$i};
+}
+print $res, "\n";
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача M - RPS}} \\
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Japan/M.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+В этой задаче упор на реализацию. Нужно просто пройти по входным строкам и сосчитать количество выигрышных партий у каждого из игроков. Сложность $O(N)$.
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Perl]
+#!/usr/bin/perl
+my %h = (paper => 0, scissors => 1, rock => 2);
+my $n = <>;
+my $A = <>;
+my $B = <>;
+chomp $A;
+chomp $B;
+my @A = split " ", $A;
+my @B = split " ", $B;
+my ($ac, $bc) = (0, 0);
+for (my $i = 0; $i < $n; ++$i) {
+	my ($a, $b) = ($A[$i], $B[$i]);
+	if ($a eq "paper" && $b eq "rock") {
+		++$ac;
+	}
+	elsif ($b eq "paper" && $a eq "rock") {
+		++$bc;
+	}
+	elsif ($h{$a} > $h{$b}) {
+		++$ac;
+	}
+	elsif ($h{$a} < $h{$b}) {
+		++$bc;
+	}
+}
+print "$ac $bc\n";
+\end{lstlisting}
 
 
 
