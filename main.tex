@@ -1497,7 +1497,7 @@ int main(int argc, const char * argv[])
 %
 %----------------------------------------------------------------------------------------
 \newpage
-\subsection{ACM-ICPC Московский четвертьфинал}
+\subsection{ACM-ICPC Московский четвертьфинал + DONE}
 
 Так как соревнование проводилось в ВШЭ, то турнирная таблица с результатами и исходные коды программ не доступны. \\
 
@@ -2013,59 +2013,260 @@ int main(int argc, const char * argv[]) {
 
 %----------------------------------------------------------------------------------------
 %
-%	Самарский Международный Аэрокосмический Лицей, тренировка №1
+%	OpenCup GrandPrix of Europe
 %
 %----------------------------------------------------------------------------------------
 \newpage
-\subsection{Самарский Международный Аэрокосмический Лицей, тренировка №1}
+\subsection{OpenCup GrandPrix of Europe (3 solved) + DONE}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{CT_SAMARA/CT_SAMARA_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{OC_Europe/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/gym/100007}}}
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10327}}}
 
 \newpage
-\textbf{{\large Задача D - Пивной вор}}
+\textbf{{\large Задача A - ASCII Addition}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{CT_SAMARA/CT_SAMARA_D.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Europe/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче нужно отсортировать массив стоимостей по убыванию и сложить первые $k$ чисел. Это и будет ответом. \\
+Задача просто на реализацию. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=Perl]
+my %digits = (
+	"xxxxx".
+	"x...x".
+	"x...x".
+	"x...x".
+	"x...x".
+	"x...x".
+	"xxxxx" => 0,
+	"....x".
+	"....x".
+	"....x".
+	"....x".
+	"....x".
+	"....x".
+	"....x" => 1,
+
+	"xxxxx".
+	"....x".
+	"....x".
+	"xxxxx".
+	"x....".
+	"x....".
+	"xxxxx" => 2,
+
+	"xxxxx".
+	"....x".
+	"....x".
+	"xxxxx".
+	"....x".
+	"....x".
+	"xxxxx" => 3,
+
+	"x...x".
+	"x...x".
+	"x...x".
+	"xxxxx".
+	"....x".
+	"....x".
+	"....x" => 4,
+
+	"xxxxx".
+	"x....".
+	"x....".
+	"xxxxx".
+	"....x".
+	"....x".
+	"xxxxx" => 5,
+
+	"xxxxx".
+	"x....".
+	"x....".
+	"xxxxx".
+	"x...x".
+	"x...x".
+	"xxxxx" => 6,
+
+	"xxxxx".
+	"....x".
+	"....x".
+	"....x".
+	"....x".
+	"....x".
+	"....x" => 7,
+
+	"xxxxx".
+	"x...x".
+	"x...x".
+	"xxxxx".
+	"x...x".
+	"x...x".
+	"xxxxx" => 8,
+
+	"xxxxx".
+	"x...x".
+	"x...x".
+	"xxxxx".
+	"....x".
+	"....x".
+	"xxxxx" => 9,
+
+	".....".
+	"..x..".
+	"..x..".
+	"xxxxx".
+	"..x..".
+	"..x..".
+	"....." => "+"
+	);
+my %dig;
+foreach my $key (keys %digits) {
+	$dig{$digits{$key}} = $key;
+}
+my @screen;
+for (my $i = 0; $i < 7; ++$i) {
+	my $str = <>;
+	chomp $str;
+	my $n = length($str)+1;
+	my $dig_cnt = $n/6;
+	for (my $j = 0; $j < $dig_cnt; ++$j) {
+		my $a = substr substr($str, $j*6, 6), 0, 5;
+		$screen[$j] .= $a;
+	}
+}
+my $expr = "";
+foreach my $s (@screen) {
+	$expr .= $digits{$s};
+}
+my $res = eval $expr;
+for (my $i = 0; $i < 7; ++$i) {
+	my $str = "";
+	foreach my $d (split "", $res) {
+		my $a = substr $dig{$d}, $i*5, 5;
+		$str .= $a.".";
+	}
+	chop $str;
+	print $str, "\n";
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача C - Counting Cities}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Europe/C.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+В этой задаче надо посчитать количество уникальных посещенных городов. Для этого каждую входную строку будем помещать в std::set, а потом просто выведем размер множества. \\
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <fstream>
+#include <set>
+#include <string>
 
 using namespace std;
 
-int main() {
-	long n, k;
-	ifstream in("input.txt");
-	ofstream out("output.txt");
-	in >> n >> k;
-	vector<long long> v(n);
-	for (long i = 0; i < n; i++) {
-		in >> v[i];
-	}
-	sort(v.begin(), v.end(), greater<long long>());
-	long long answer = 0;
-	for (long i = 0; i < k && i < v.size(); i++) {
-		answer += v[i];
-	}
-	out << answer << endl;
-	in.close();
-	out.close();
-	return 0;
+int main(int argc, const char * argv[]) {
+    
+    int t;
+    cin >> t;
+    set<string> s;
+    while (t--) {
+        int n;
+        cin >> n;
+        string name;
+        for (int i = 0; i < n; i++) {
+            cin >> name;
+            s.insert(name);
+        }
+        cout << s.size() << endl;
+        s.clear();
+    }
+    
+    return 0;
+}
+
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача E - Electoral Estimations}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Europe/E.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения этой задачи нужно подсчитать голоса для каждого кандидата, отсортировать их и затем найти отношения количества голосов за победителя к остальным, чтобы определить, является он абсолютным победителем или нет. \\
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <algorithm>
+#include <vector>
+typedef struct {
+    int number;
+    int votes;
+} Person;
+bool cmp(const Person &a, const Person &b) {
+    return a.votes > b.votes;
+}
+using namespace std;
+int main(int argc, const char * argv[]) {
+    int t;
+    cin >> t; 
+    while (t--) {
+        int n;
+        cin >> n;
+        int total_votes = 0;
+        vector<Person> persons(n);
+        for (int i = 0; i < n; i++) {
+            persons[i].number = i + 1;
+            cin >> persons[i].votes;
+            total_votes += persons[i].votes;
+        }
+        sort(persons.begin(), persons.end(), cmp);
+        int top_votes = persons[0].votes;
+        int half_votes = total_votes / 2;
+        if (t == 1) {
+            cout << " " << endl;
+        }
+        if (top_votes > half_votes) {
+            if (persons[1].votes != top_votes) {
+                cout << "Victory " << persons[0].number << endl;
+            } else {
+                cout << "Tie" << endl;
+            }
+        } else {
+            if (persons[1].votes != top_votes) {
+                cout << "Leader " << persons[0].number << endl;
+            } else {
+                cout << "Tie" << endl;
+            }
+        }
+    }
+    return 0;
 }
 \end{lstlisting}
+
+
+
 
 
 
