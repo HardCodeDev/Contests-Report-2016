@@ -1,0 +1,267 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{article}
+%\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{fullpage}
+\usepackage{multicol,multirow}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{titlesec}
+
+\usepackage{longtable}
+\usepackage{ltxtable}
+
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+
+
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\geometry{left=1.5cm}
+\geometry{right=1.5cm}
+
+
+\pagestyle{headings}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\large Московский Авиационный Институт\\(национальный исследовательский университет)}\\[1.5cm] % Name of your university/college
+
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.25\textwidth]{mai.png}\\[1cm]
+% Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vspace{40px}
+
+\textsc{\Large Отчет по индивидуальному учебному плану}\\[0.5cm] % Major heading such as course name
+%\textsc{\large Алгоритмы на графах}\\[0.5cm] % Minor heading such as course title
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Алгоритмы на графах}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Студенты:}\\
+%John \textsc{Smith} % Your name
+Макаров Никита\\Якименко Антон
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Руководитель:} \\
+%Dr. James \textsc{Smith} % Supervisor's Name
+Зайцев В.Е.
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+%{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+%----------------------------------------------------------------------------------------
+%	СОДЕРЖАНИЕ
+%----------------------------------------------------------------------------------------
+
+
+\tableofcontents
+
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	ПЕРСОНАЛЬНЫЙ ОТЧЕТ - ТАБЛИЦЫ
+%----------------------------------------------------------------------------------------
+
+
+%\chapter{Foo}
+\section{Личные отчеты}
+%\lipsim
+
+Отчет о работе студента Макарова Н.А. по индивидуальному учебному плану в V-VI семестрах 2014-2015 учебного года.
+
+
+% Таблица - часть 1
+\begin{table}[ht!]
+\centering
+%\caption{My caption}
+\label{my-tab1}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+
+% Заголовки столбцов
+№ & 
+Дата & 
+Контест & 
+\begin{tabular}[c]{@{}c@{}}Место\\ проведения\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Кол-во\\ участников\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Решено\\ задач\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Задач на\\ участника\end{tabular} \\ \hline
+
+% Строки таблицы
+1 & 18.09.2014 & Codeforces Round 267 Div 2 & Дом & 1 & 2 & 2 \\ \hline
+
+2 & 21.09.2014 & Codeforces Round 268 Div 2 & Дом & 1 & 2 & 2 \\ \hline
+
+3 & 22.09.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces Отборочный контест\\ СГАУ на 1/4 ACM-ICPC\end{tabular} & Дом & 1 & 3 & 3 \\ \hline
+
+4 & 25.09.2014 & Codeforces Training S02E03 & МАИ & 3 & 3 & 1 \\ \hline
+
+5 & 28.09.2014 & Codeforces Round 270 Div 2 & Дом & 1 & 2 & 2 \\ \hline
+
+6 & 02.10.2014 & Codeforces Training S02E04 & МАИ & 3 & 2 & 0.66 \\ \hline
+
+7 & 05.10.2014 & \begin{tabular}[c]{@{}c@{}}XV Открытая Всесибирская\\ Олимпиада по\\ Программированию\end{tabular} & МАИ & 3 & 1 & 0.33 \\ \hline
+
+8 & 09.10.2014 & Codeforces Training S02E05 & МАИ & 3 & 4 & 1.33 \\ \hline
+
+9 & 16.10.2014 & Codeforces Round 273 Div 2 & Дом & 1 & 2 & 2 \\ \hline
+
+10 & 17.10.2014 & Codeforces Training S02E06 & МАИ & 3 & 0 & 0 \\ \hline
+
+11 & 18.10.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces Тренировка СПбГУ\\ графы и DFS\end{tabular} & Дом & 3 & 2 & 0.66 \\ \hline
+
+12 & 19.10.2014 & OpenCup GP of SPb. Div 2 & МАИ & 3 & 1 & 0.33 \\ \hline
+
+13 & 20.10.2014 & Codeforces Round 274 Div 2 & МАИ & 1 & 3 & 3 \\ \hline
+
+14 & 23.10.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces Самарский\\Аэрокосмический Лицей\\ тренировка №1\end{tabular} & Дом & 2 & 1 & 0.5 \\ \hline
+
+15 & 23.10.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces ACM, NEERC,\\ Восточный четвертьфинал\end{tabular} & Дом & 3 & 4 & 1.33 \\ \hline
+
+16 & 24.10.2014 & Codeforces Round 275 Div 2 & Дом & 1 & 1 & 1 \\ \hline
+
+17 & 25.10.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces ACM, NEERC,\\ Южный четвертьфинал\end{tabular} & Дом & 3 & 3 & 1 \\ \hline
+
+18 & 26.10.2014 & ACM-ICPC 1/4 Final & МГУ & 3 & 3 & 1 \\ \hline
+
+19 & 30.10.2014 & Codeforces Training S02E07 & МАИ & 3 & 2 & 0.66 \\ \hline
+
+20 & 01.11.2014 & Codeforces Crypto Cup & Дом & 3 & 9 & 3 \\ \hline
+
+21 & 02.11.2014 & OpenCup GP of Siberia Div 2 & МАИ & 2 & 3 & 1.5 \\ \hline
+
+22 & 06.11.2014 & Codeforces Training S02E08 & МАИ & 3 & 2 & 0.66 \\ \hline
+
+23 & 13.11.2014 & Codeforces Training S02E09 & МАИ & 3 & 3 & 1 \\ \hline
+
+24 & 15.11.2014 & \begin{tabular}[c]{@{}c@{}}Codeforces Олимпиада\\ школьников\\ Нижегородской области\end{tabular} & Дом & 3 & 3 & 1 \\ \hline
+
+25 & 16.11.2014 & \begin{tabular}[c]{@{}c@{}}OpenCup GP\\ of Central Europe. Div 2\end{tabular} & МАИ & 3 & 1 & 0.33 \\ \hline
+
+26 & 20.11.2014 & Codeforces Training S02E10 & МАИ & 3 & 3 & 1 \\ \hline
+
+27 & 23.11.2014 & OpenCup GP of Europe Div 2 & МАИ & 3 & 5 & 1.66 \\ \hline
+
+28 & 14.12.2014 & OpenCup GP of Peterhof Div 2 & МАИ & 3 & 1 & 0.33 \\ \hline
+
+29 & 01.02.2015 & OpenCup GP of Japan Div 2 & МАИ & 3 & 4 & 1.33 \\ \hline
+
+30 & 08.02.2015 & OpenCup Northern GP Div 2 & МАИ & 3 & 2 & 0.66 \\ \hline
+
+31 & 15.02.2015 & OpenCup GP of Karelia Div 2 & МАИ & 3 & 4 & 1.33 \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+Продолжение таблицы.
+% Таблица - часть 2
+\begin{table}[ht!]
+\centering
+%\caption{My caption}
+\label{my-tab2}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+
+% Заголовки столбцов
+№ & 
+Дата & 
+Контест & 
+\begin{tabular}[c]{@{}c@{}}Место\\ проведения\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Кол-во\\ участников\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Решено\\ задач\end{tabular} & 
+\begin{tabular}[c]{@{}c@{}}Задач на\\ участника\end{tabular} \\ \hline
+
+% Строки таблицы
+32 & 22.02.2015 & OpenCup GP of Udmurtia Div 2 & МАИ & 3 & 4 & 1.33 \\ \hline
+
+33 & 01.03.2015 & OpenCup GP of China Div 2 & МАИ & 3 & 1 & 0.33 \\ \hline
+
+34 & 08.02.2015 & OpenCup GP of Tatarstan Div 2 & МАИ & 3 & 1 & 0.33 \\ \hline
+
+35 & 07.03.2015 & VK Cup 2015 Квалификация & Дом & 2 & 2 & 1 \\ \hline
+
+36 & 21.03.2015 & VK Cup 2015 Раунд 1 & Дом & 2 & 2 & 1 \\ \hline
+
+37 & 29.03.2015 & OpenCup Gp of America Div 2 & МАИ & 3 & 4 & 1.33 \\ \hline
+
+38 & 18.04.2015 & Vekua Cup Личный этап & МФТИ-1С & 1 & 1 & 1 \\ \hline
+
+39 & 19.04.2015 & Vekua Cup Командный этап & МФТИ-1С & 3 & 3 & 1 \\ \hline
+
+40 & 26.04.2015 & OpenCup GP of Ural Div 2 & МАИ & 2 & 2 & 1 \\ \hline
+
+41 & 31.05.2105 & Mail.ru RCC Квалификация & Дом & 1 & 1 & 1 \\ \hline
+
+\end{tabular}
+\end{table}
+
+Итого: 41 контест, 47 решенных задач.
+
+
+
+
+
+\end{document}
