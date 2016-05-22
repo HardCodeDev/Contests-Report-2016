@@ -3,3 +3,4 @@
 ## Отсутствует алгоритм
 - OpenCup GP of Ukraine - задача F
 - OpenCup GP of Eurasia - задачи 9, 12
+- OpenCup GP of SBb - задача E
