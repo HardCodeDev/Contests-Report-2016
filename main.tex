@@ -1503,166 +1503,199 @@ int main(int argc, const char * argv[])
 
 
 
+
 %----------------------------------------------------------------------------------------
 %
-%	Тренировка СПбГУ B #3 Поиск кратчайшего пути и DFS
+%	OpenCup GrandPrix of Yekaterinburg
 %
 %----------------------------------------------------------------------------------------
 \newpage
-\subsection{Тренировка СПбГУ Поиск кратчайшего пути и DFS}
+\subsection{OpenCup GrandPrix of Yekaterinburg (4 solved) + (алгоритм в B)}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{SPBGU_GRAPHS/SPBGU_GRAPHS_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{OC_YKB/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/gym/100232}}}
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10325}}}
 
 \newpage
-\textbf{{\large Задача C - Флойд}}
+\textbf{{\large Задача B - Black Widow}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{SPBGU_GRAPHS/SPBGU_GRAPHS_C.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_YKB/B.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-В задаче требуется найти кратчайшие пути между всеми парами вершин и представить их матрицей смежности. Ее можно решить используя алгоритм Флойда-Уоршелла за $O(n^3)$.
+\textcolor{red}{\Huge{АНТОН ????}}. \\
 
 \newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C]
-#include <iomanip>
 #include <iostream>
-#include <algorithm>
-#include <fstream>
-
+#include <set>
+#include <vector>
 using namespace std;
+#define ll long long
+#define ull unsigned long long
 
 int main() {
-
-    more_speed
-    ifstream in("floyd.in");
-    ofstream out("floyd.out");
-
-    int n;
-    in >> n;
-    vector<vector<int> > m(n, vector<int>(n, 0));
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            in >> m[i][j];
-        }
-    }
-
-    for (int k = 0; k < n; k++) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                m[i][j] = min(m[i][j], m[i][k] + m[k][j]);
-            }
-        }
-    }
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            out << m[i][j];
-            if (j < n - 1) out << " ";
-            else out << endl;
-        }
-    }
-
-    in.close();
-    out.close();
-
-    return 0;
+	ull n;
+	cin >> n;
+	set<ull> v;
+	vector<ull> m;
+	ull maxV = 0;
+	ull a = 1;
+	for (int i = 0; i < n; ++i) {
+		ull d;
+		cin >> d;
+		if (d > maxV)
+			maxV = d;
+		v.insert(d);
+		m.push_back(d);
+	}
+	bool f = 1;
+	while (1) {
+		++a;
+		bool f = 1;
+		for (int i = 0; i < n; ++i) {
+			if (m[i] >= a && m[i]%a == 0) {
+				f = 0;
+				break;
+			}
+		}
+		if (f) {
+			break;
+		}
+	}
+	while (1) {
+		f = 1;
+		for (ull x = 0; x < maxV+1; x += a) {
+			if (v.find(x) != v.end()) {
+				f = 0;
+				break;
+			}
+		}
+		if (f) {
+			cout << a << endl;
+			break;
+		}
+		while (1) {
+			++a;
+			bool f = 1;
+			for (int i = 0; i < n; ++i) {
+				if (m[i] >= a && m[i]%a == 0) {
+					f = 0;
+					break;
+				}
+			}
+			if (f) {
+				break;
+			}
+		}
+	}
+	return 0;
 }
 \end{lstlisting}
 
 
 \newpage
-\textbf{{\large Задача D - Поиск цикла}}
+\textbf{{\large Задача D - Dr. Banner}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{SPBGU_GRAPHS/SPBGU_GRAPHS_D.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_YKB/D.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Задача решается поиском в глубину. Нужно сделать серию поисков в глубину, заходя в новую вершину будем красить ее в серый цвет, а выходя в черный. Если заходим в серую вершину, то цикл найден. \\
+Для решения этой задачи нам нужно знать префиксную сумму по времени на отрезке. Мы можем вычислить вручную несколько первых значений, по которым потом сможешь получить любое значение, так как все они высчитываются на основе предыдущих. Сложность алгоритма $O(N)$. \\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iomanip>
-#include <iostream>
-#include <algorithm>
-#include <fstream>
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+m = (1e+9 + 7).to_i
 
-vector<set<LL> > g;
-vector<char> color;
-vector<LL> p;
-LL cycle_st, cycle_end;
+amount = Array.new(1e+5 + 1)
+sum_for_pos = Array.new(1e+5 + 1)
 
-bool dfs (LL v) {
-    color[v] = 1;
-    for (set<LL>::iterator i = g[v].begin(); i != g[v].end(); i++) {
-        LL to = *i;
-        if (color[to] == 0) {
-            p[to] = v;
-            if (dfs(to)) return true;
-        }
-        else if (color[to] == 1){
-            cycle_st = to;
-            cycle_end = v;
-            return true;
-        }
-    }
-    color[v] = 2;
-    return false;
+k = 5
+
+amount[1] = 1
+amount[2] = 2
+amount[3] = 2
+amount[4] = 4
+
+sum_for_pos[1] = 1
+sum_for_pos[2] = 3
+sum_for_pos[3] = 5
+sum_for_pos[4] = 9
+
+while k <= n do
+    max_next_k = k / 2
+    amount[k] = (1 + sum_for_pos[max_next_k])
+    sum_for_pos[k] = sum_for_pos[k - 1] + amount[k]
+    k += 1
+end
+
+answer = (amount[n] % m)
+
+puts answer
+\end{lstlisting}
+
+
+
+\newpage
+\textbf{{\large Задача G - Groot}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_YKB/G.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+В этой задаче нужно посчитать количество восклицательных знаков во входной строке и вывести слово Wow, в котором столько же букв $o$, сколько знаков в строке. Если в строке нет ни одного знака, то вывести Pffff. Сложность $O(1)$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Perl]
+#!/usr/bin/perl
+my $str =  <>;
+my @a = $str =~ /\!/g;
+my $n = scalar(@a);
+if ($n == 0) {
+	print "Pfff";
 }
-
-using namespace std;
-int main() {
-
-    more_speed
-    ifstream in("cycle.in");
-    ofstream out("cycle.out");
-
-    LL n, m, f, t;
-    in >> n >> m;
-    g.resize(n);
-
-    for (LL i = 0; i < m; i++) {
-        in >> f >> t;
-        g[f - 1].insert(t - 1);
-    }
-
-    p.assign(n, -1);
-    color.assign(n, 0);
-    cycle_st = -1;
-    for (LL i = 0; i < n; i++) {
-        if (dfs(i)) break;
-    }
-    if (cycle_st == -1) {
-        out << "NO" << endl;
-    }
-    else {
-        out << "YES" << endl;
-        vector<LL> cycle;
-        for (LL v = cycle_end; v != cycle_st; v = p[v]) {
-            cycle.push_back(v);
-        }
-        cycle.push_back(cycle_st);
-        reverse(cycle.begin(), cycle.end());
-        for (size_t i = 0; i < cycle.size(); i++) {
-            out << cycle[i] + 1 << " ";
-        }
-        out << endl;
-    }
-    in.close();
-    out.close();
-
-    return 0;
+else {
+	print "W"."o"x$n."w";
 }
 \end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача L - Loki and Forks}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_YKB/L.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Чтобы посчитать количество уникальных наборов нужно просто отсортировать все значения количества зубьев в наборах, затем построить из этих чисел строки путем конкатенирования и посчитать количество уникальных строк. Сложность $O(N * log(N))$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Perl]
+#!/usr/bin/perl
+my %h;
+while (my $str = <>) {
+	chomp $str;
+	++$h{join "", sort {$a <=> $b} split " ", $str};
+}
+print scalar(keys(%h));
+\end{lstlisting}
+
+
+
+
 
 
 
