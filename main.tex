@@ -2272,297 +2272,189 @@ int main(int argc, const char * argv[]) {
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces ACM Восточный четвертьфинал
+%	OpenCup GrandPrix of Peterhof
 %
 %----------------------------------------------------------------------------------------
 \newpage
-\subsection{Codeforces ACM-ICPC Восточный четвертьфинал}
+\subsection{OpenCup GrandPrix of Peterhof (4 solved) + (алгоритм в A, E, G)}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{CT_ACM_EAST/CT_ACM_EAST_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{OC_Peterhof/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/gym/100507}}}
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10328}}}
 
 \newpage
-\textbf{{\large Задача A - About Grisha N.}}
+\textbf{{\large Задача A - (a, b)-башня}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{CT_ACM_EAST/CT_ACM_EAST_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Peterhof/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Для решения задачи достаточно увидеть закономерность, что если $f > 6$, то ответ будет $YES$, иначе ответ будет $NO$. Сложность, очевидно, $O(1)$.\\
+\textcolor{red}{\Huge{АНТОН ????}}. \\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-using namespace std;
+\begin{lstlisting}[language=Ruby]
+#!/usr/bin/env ruby
+def func(l, r)
+  if l < r
+    (l ** func(l+1, r))%10
+  else
+    r%10
+  end
+end
+a, b = gets.split.map {|x| x.to_i}
+puts func(a,b)
 
-int main(int argc, const char * argv[]) {
-    int f;
-    cin >> f;
-    if(f>6)
-        cout << "YES";
-    else
-        cout << "NO";
-    return 0;
-}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача C - Отношение эквивалентности}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Peterhof/C.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. Необходимо найти классы эквивалентности. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+
+data = Array.new
+
+for i in 0...n
+    s = gets.chomp
+    data.push(s)
+end
+
+data.each do |s|
+    begin
+        s_copy = s.clone
+        s.gsub!(/0{2}/,'')
+        s.gsub!(/1{3}/,'')
+    end until s == s_copy
+end
+
+h = Hash.new()
+
+data.each_index do |i|
+    s = data[i]
+    if h[s] == nil
+        h[s] = Array.new
+    end
+    h[s].push(i + 1)
+end
+
+res = Array.new
+
+h.each_value do |v|
+    res.push(v)
+end
+
+res.sort! do |a, b|
+    a.first <=> b.first
+end
+
+puts "#{res.size}"
+
+res.each do |l|
+    l.each do |x|
+        print "#{x} "
+    end
+    puts
+end
+
 \end{lstlisting}
 
 \newpage
-\textbf{{\large Задача D - Zhenya moves from the dormitory}}
+\textbf{{\large Задача E - Идеальная фотография}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{CT_ACM_EAST/CT_ACM_EAST_D1.png}\\ [1cm]
-\includegraphics[width=0.5\textwidth]{CT_ACM_EAST/CT_ACM_EAST_D2.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Peterhof/E.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Для решения задачи сразу при считывании найдем лучшеие однокомнатные и двухкомнатные квартиры по комфорту, если Женя будет жить один. Затем отсортируем все квартиры по комфорту и для каждого друга Жени будем подбирать лучший вариант при совместной покупке. После этого сравним найденные варианты и выберем лучший. Сложность алгоритма $O(n^2)$. \\
+\textcolor{red}{\Huge{АНТОН ????}}. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <fstream>
+\begin{lstlisting}[language=Ruby]
+#!/usr/bin/env ruby
+def calc_sum(m, i)
+  s = 0
+  for a in m do
+    s += Math.sqrt((a-i)*(a-i) + 1)
+    i += 1
+  end
+  return s
+end
+n = gets.to_i
+r = gets.split.map{|x| x.to_i}
+c = gets.split.map{|x| x.to_i}
+m = (r + c).sort
+x = 0
+step = 1000000
+sum_curr = calc_sum(m, x)
+sum_prev = sum_curr + 1
+sign = 1
+x += step
+while ((sum_prev-sum_curr).abs > 0.0000000001)
+  sum_prev = sum_curr
+  sum_curr = calc_sum(m, x)
+  if sum_curr > sum_prev && sign == 1
+    sign = -1
+    step /= 2.0
+    sign_counter = 0
+  elsif sum_curr > sum_prev && sign == -1
+     sign = 1
+     step /= 2.0
+     sign_counter = 0
+  end
+  x += step*sign
+end
+puts sum_curr
 
-using namespace std;
-
-typedef struct {
-    long money;
-    long ad;
-    int num;
-}frd;
-
-typedef struct {
-    long rooms;
-    long price;
-    long ad;
-    int num;
-}apartment;
-bool cmp_ap(const apartment &a1, const apartment &a2) {
-    return a1.ad > a2.ad;
-}
-bool cmp_fr(const frd &f1, const frd &f2) {
-    return f1.ad > f2.ad;
-}
-int find_good_ap(const vector<apartment> &a, long money1, long money2) {
-    for (int i = 0; i < a.size(); i++) {
-        long price_for_each = a[i].price / 2;
-        if (a[i].price % 2 == 1) {
-            price_for_each++;
-        }
-        if (money1 >= price_for_each && money2 >= price_for_each && a[i].rooms == 2)
-            return i;
-    }
-    return -1;
-}
-
-int main() {
-    long money, ad1, ad2;
-    long n, m;
-    cin >> money >> ad1 >> ad2;
-    cin >> n;
-    vector<frd> fr(n);
-    for (int i = 0; i < n; i++) {
-        cin >> fr[i].money >> fr[i].ad;
-        fr[i].num = i + 1;
-    }
-    cin >> m;
-    vector<apartment> ap(m);
-    long max_ad_in_1room = -1, max_ad_in_2room = -1;
-    int  in_1room_num = -1, in_2room_num = -1;
-    bool can_buy_alone = false;
-    for (int i = 0; i < m; i++) {
-        cin >> ap[i].rooms >> ap[i].price >> ap[i].ad;
-        ap[i].num = i + 1;
-        if (ap[i].rooms == 1) {
-            if (money >= ap[i].price && ad1 + ap[i].ad > max_ad_in_1room) {
-                max_ad_in_1room = ad1 + ap[i].ad;
-                in_1room_num = i + 1;
-            }
-        }
-        else {
-            if (money >= ap[i].price && ad2 + ap[i].ad > max_ad_in_2room) {
-                max_ad_in_2room = ad2 + ap[i].ad;
-                in_2room_num = i + 1;
-            }
-        }
-    }
-    sort(ap.begin(), ap.end(), cmp_ap);
-    int ans_ap = -1, ans_fr = -1;
-    long max_ad_tog = -1;
-    int found_ap = -1;
-    for (int i = 0; i < n; i++) {
-        found_ap = find_good_ap(ap, money, fr[i].money);
-        if (found_ap != -1) {
-            long cur_ad = fr[i].ad + ap[found_ap].ad;
-            if (cur_ad > max_ad_tog) {
-                ans_ap = ap[found_ap].num;
-                ans_fr = fr[i].num;
-                max_ad_tog = cur_ad;
-            }
-        }
-    }
-
-    long alone = 0, whereAlone = 0;
-    if (max_ad_in_1room != -1 || max_ad_in_2room != -1) {
-        if (max_ad_in_1room > max_ad_in_2room) {
-            alone = max_ad_in_1room;
-            whereAlone = in_1room_num;
-        }
-        else {
-            alone = max_ad_in_2room;
-            whereAlone = in_2room_num;
-        }
-        can_buy_alone = true;
-    }
-    if (found_ap == -1 && !can_buy_alone) {
-        cout << "Forget about apartments. Live in the dormitory." << endl;
-        return 0;
-    }
-    if (alone > max_ad_tog)
-        cout << "You should rent the apartment #" << whereAlone << " alone." << endl;
-    else
-        cout << "You should rent the apartment #" << ans_ap << " with the friend #" << ans_fr << "." << endl;
-    return 0;
-}
 \end{lstlisting}
 
 \newpage
-\textbf{{\large Задача I - Traffic Jam in Flower Town}}
+\textbf{{\large Задача G - Случайные тоннели}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{CT_ACM_EAST/CT_ACM_EAST_I.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Peterhof/G.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Считываем водителей с юга, затем с севера. Затем в цикле в порядке заданных приоритетов пропускаем водителей и считаем время. Сложность $O(n)$.
+\textcolor{red}{\Huge{АНТОН ????}}. \\
 
 \newpage
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#include <deque>
+\begin{lstlisting}[language=Ruby]
+#!/usr/bin/env ruby
+def send_cmd(cmd)
+  puts cmd
+  STDOUT.flush
+end
+a = 1
+while (true) do
+  send_cmd a
+  case gets
+  when /yes/
+    exit if a == 1
+    a = 1
+  when /no/
+    a = rand(1<<31)
+  end
+end
 
-using namespace std;
-
-int main()
-{
-    deque <char> south;
-    deque <char> north;
-
-    char temp;
-    int time = 0;
-    temp = cin.get();
-    while(temp != '\n'){
-        south.push_back(temp);
-        temp = cin.get();
-    }
-    temp = cin.get();
-    while(temp != '\n'){
-        north.push_back(temp);
-        temp = cin.get();
-    }
-    char s, n;
-    while(south.size() > 0 && north.size() > 0){
-        s = south[0];
-        n = north[0];
-        time++;
-        if(s == 'R' && n == 'L')
-            south.pop_front();
-        else if(s == 'L' && n == 'R')
-            north.pop_front();
-         else if(s == 'L' && n == 'F')
-            north.pop_front();
-         else if(s == 'F' && n == 'L')
-            south.pop_front();
-         else {
-            south.pop_front();
-            north.pop_front();
-         }
-    }
-
-    if(south.size() > 0)
-        time += south.size();
-    if(north.size() > 0)
-        time += north.size();
-
-    cout << time << endl;
-    return 0;
-}
-\end{lstlisting}
-
-\newpage
-\textbf{{\large Задача L - Donald is a postman}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{CT_ACM_EAST/CT_ACM_EAST_L.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Задача на реализацию. Нужно симулировать перемещение между состояниями в зависимости от первой буквы имени. Сложность $O(n)$.
-
-\newpage
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    int n;
-    cin >> n;
-    string name;
-    int state = 1;
-    int answer = 0;
-    for (int i = 0; i < n; i++) {
-        cin >> name;
-        char t = name[0];
-        if (state == 1) {
-            if (t == 'B' || t == 'M' || t == 'S') {
-                answer++;
-                state = 2;
-            }
-            else if (t == 'D' || t == 'J' || t == 'K' || t == 'T' || t == 'W' || t == 'G') {
-                answer += 2;
-                state = 3;
-            }
-        }
-        else if (state == 2) {
-            if (t == 'A' || t == 'P' || t == 'O' || t == 'R') {
-                answer++;
-                state = 1;
-            }
-            else if (t == 'D' || t == 'J' || t == 'K' || t == 'T' || t == 'W' || t == 'G') {
-                answer++;
-                state = 3;
-            }
-
-        }
-        else {
-            if (t == 'A' || t == 'P' || t == 'O' || t == 'R') {
-                answer += 2;
-                state = 1;
-            }
-            else if (t == 'B' || t == 'M' || t == 'S') {
-                answer++;
-                state = 2;
-            }
-        }
-    }
-
-    cout << answer << endl;
-    return 0;
-}
 \end{lstlisting}
 
 

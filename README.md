@@ -7,3 +7,4 @@
 - OpenCup GP of SPb - задача E
 - OpenCup GP of Yekaterinburg - задача B
 - OpenCup GP of Siberia - задачи B, K
+- OpenCup GP of Peterhof - задачи A, E, G
