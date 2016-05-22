@@ -449,7 +449,7 @@
 %	OpenCup GrandPrix of Ukraine
 %
 %----------------------------------------------------------------------------------------
-\subsection{OpenCup GrandPrix of Ukraine (4 solved) + DONE}
+\subsection{OpenCup GrandPrix of Ukraine (4 solved) + (алгоритм в F)}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
@@ -584,7 +584,7 @@ print "-1\n";
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче нужно заметить, что ответом будет наибольший общий делитель входных чисел. НОД находим с помощью алгоритма Евклида. Сложность решения $O(log min(a, b)$ \\
+В этой задаче нужно заметить, что ответом будет наибольший общий делитель входных чисел. НОД находим с помощью алгоритма Евклида. Сложность решения $O(log * min(a, b)$ \\
 
 
 %\newpage
@@ -880,76 +880,380 @@ print "$ac $bc\n";
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{XV Открытая Всесибирская олимпиада по программированию им И.В. Поттосина}
+\subsection{OpenCup GrandPrix of Eurasia (4 solved) + (алгоритм в 9, 12)}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{Siberia/Siberia_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{OC_Eurasia/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{https://olympic.nsu.ru/nsuts-new/news.cgi}}}
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10323}}}
 
 \newpage
-\textbf{{\large Задача 2 - Копировальный аппарат}}
+\textbf{{\large Задача 2 - Плэй-офф}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{Siberia/Siberia_1.png}\\ [1cm]
-\includegraphics[width=0.6\textwidth]{Siberia/Siberia_2.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Eurasia/2_1.png}\\ [1cm]
+\includegraphics[width=0.6\textwidth]{OC_Eurasia/2_2.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Задача на реализацию. Нужно считать входные данные в двумерный массив символов, затем пройтись по всем элементам и запомнить наибольшие позиции, на которых находятся решетки.
+Задача на реализацию. Мы строим дерево команд и каждой команде ставим в соответствие массив команд, которые слабее рассматриваемой. Затем мы считываем запросы и выводим ответ. Сложность алгоритма $O(Q * N * log(N))$.
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C]
+#include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <fstream>
+using namespace std;
+typedef struct {
+    string name;
+    vector<string> losers;
+} Team;
+int main(int argc, const char * argv[]) {
+    ifstream in("input.txt");
+    ofstream out("output.txt");
+    int n;
+    in >> n;
+    int t = 1;
+    for (int i = 0; i < n; i++) {
+        t *= 2;
+    }
+    map<int, vector<int> > teams; // first=team_name, second=losers_vector
+    map<string, int> index_for_name;
+    vector<pair<int, int> > pairs;
+    vector<pair<int, int> > prev_pairs;
+    vector<char> log(t - 1);
+    for (int i = 0; i < t; i = i + 2) {
+        string team_name_1, team_name_2;
+        in >> team_name_1 >> team_name_2;
+        index_for_name[team_name_1] = i;
+        index_for_name[team_name_2] = i + 1;
+        teams[i] = vector<int> ();
+        teams[i + 1] = vector<int> ();
+        pairs.push_back(make_pair(i, i + 1));
+    }
+    in.get();
+    for (int i = 0; i < t - 1; i++) {
+        char result = in.get();
+        log[i] = result;
+    }
+    in.get();
+    prev_pairs = pairs;
+    pairs.clear();
+    bool end = false;
+    while (!end) {
+        for (int i = 0; i < t / 2; i += 2) {
+            int first_winner, first_looser;
+            int second_winner, second_looser;
+            if (log[i] == 'W') {
+                first_winner = prev_pairs[i].first;
+                first_looser = prev_pairs[i].second;
+                teams[first_winner].push_back(first_looser);
+                teams[first_winner].insert(teams[first_winner].end(), teams[first_looser].begin(), teams[first_looser].end());
+            } else {
+                first_winner = prev_pairs[i].second;
+                first_looser = prev_pairs[i].first;
+                teams[first_winner].push_back(first_looser);
+                teams[first_winner].insert(teams[first_winner].end(), teams[first_looser].begin(), teams[first_looser].end());
+            }
+            if (i == t - 2) {
+                end = true;
+                break;
+            }
+            if (log[i + 1] == 'W') {
+                second_winner = prev_pairs[i + 1].first;
+                second_looser = prev_pairs[i + 1].second;
+                teams[second_winner].push_back(second_looser);
+                teams[second_winner].insert(teams[second_winner].end(), teams[second_looser].begin(), teams[second_looser].end());
+            } else {
+                second_winner = prev_pairs[i + 1].second;
+                second_looser = prev_pairs[i + 1].first;
+                teams[second_winner].push_back(second_looser);
+                teams[second_winner].insert(teams[second_winner].end(), teams[second_looser].begin(), teams[second_looser].end());
+            }
+            pairs.push_back(make_pair(first_winner, second_winner));
+        }
+        log.erase(log.begin(), log.begin() + t / 2);
+        prev_pairs = pairs;
+        pairs.clear();
+        t /= 2;
+    }
+    int q;
+    in >> q;
+    for (int i = 0; i < q; i++) {
+        string t1, t2;
+        in >> t1 >> t2;
+        int index_1 = index_for_name[t1];
+        int index_2 = index_for_name[t2];
+        if (find(teams[index_1].begin(), teams[index_1].end(), index_2) != teams[index_1].end()) {
+            out << "Win" << endl;
+        } else if (find(teams[index_2].begin(), teams[index_2].end(), index_1) != teams[index_2].end()) {
+            out << "Lose" << endl;
+        } else {
+            out << "Unknown" << endl;
+        }
+    }
+    in.close();
+    out.clear();
+    return 0;
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача 9 - Хэш-функция}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Eurasia/9.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+\textcolor{red}{\Huge{АНТОН ????}}. \\
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C]
+#include <iostream>
+#include <cinttypes>
+using namespace std;
+#define ll long long
+#define ull unsigned long long
+
+uint32_t dehash(uint32_t value) {
+    uint32_t hash = value;
+    hash = hash - (hash<<16);
+    uint32_t t = hash;
+	hash = (hash xor (hash >> 11)) & ~((1ULL<<10)-1);
+	for (int i = 0; i < 1023; ++i) {
+		if ((hash xor (hash >> 11)) == t) {
+			break;
+		}
+		++hash;
+	}
+	ull h = hash;
+	for (ull i = 0;; ++i) {
+		if (((h|(i<<32)) % 9) == 0) {
+			hash = (h|(i<<32))/9;
+			break;
+		}
+	}
+	t = hash;
+	hash = (hash xor (hash >> 6)) & ~((1ULL<<20)-1);
+	for (int i = 0; i < 1048575; ++i) {
+		if ((hash xor (hash >> 6)) == t) {
+			break;
+		}
+		++hash;
+	}
+	h = hash;
+	for (ull i = 0;; ++i) {
+		if (((h|(i<<32)) % 1025) == 0) {
+			hash = (h|(i<<32))/1025;
+			break;
+		}
+	}
+    return hash;
+}
+
+int main() {
+	uint32_t Q;
+	cin >> Q;
+	for (int i = 0; i < Q; ++i) {
+		ull d;
+		cin >> d;
+		cout << dehash(d) << "\n";
+	}
+	return 0;
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача 11 - Стулья мастера Гамбса}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Eurasia/11.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения данной задачи мы отсортируем стулья по стоимости, а затем будем набирать стулья начиная с самых дешевых. Если находим стул, который не можем купить, то завершаем выполнение, так как дальше не будет стульев которые мы сможем купить. Сложность алгоритма $O(N^2 * log(N)$.
 
 \newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C]
 #include <iostream>
 #include <algorithm>
-#include <cmath>
-
-#include <sstream>
 #include <fstream>
-
-#define LL  long long
+#include <vector>
 
 using namespace std;
 
+bool pairMinMax(const pair<int, int> &a, const pair<int, int> &b) {
+	return a.second < b.second;
+}
+
+
 int main() {
-    ifstream in;
-    ofstream out;
-    in.open("input.txt");
-    out.open("output.txt");
 
-    LL a, b;
-    in >> a >> b;
-    char pic[a + 1][b + 1];
-    LL XMax = 0;
-    LL YMax = 0;
+	ifstream in("input.txt");
+	ofstream out("output.txt");
 
-    for (LL i = 1; i <= a; i++) {
-        for (LL j = 1; j <= b; j++) {
-            in >> pic[i][j];
-            if (pic[i][j] == '#' && j > XMax) XMax = j;
-            if (pic[i][j] == '#' && i > YMax) YMax = i;
-        }
-        in.get();
-    }
-    LL n, y, x;
-    in >> n;
-    for (LL i = 1; i <= n; i++) {
-        in >> y >> x;
-        if (y >= YMax && x >= XMax) {
-            out << i << endl;
-            return 0;
-        }
-    }
-    in.close();
-    out.close();
 
-    return 0;
+	int N;
+	long long S;
+
+	in >> N >> S;
+
+	vector <pair <int, int> > element(N);
+	vector <bool> bought(N+1, false);
+
+	pair <int, int> temp;
+	for (int i = 0; i < N; i++) {
+		in >> temp.first >> temp.second;
+		element[i] = temp;
+	}
+
+	sort(element.begin(), element.end(), pairMinMax);
+
+	int count = 0;
+	for (int i = 0; i < N; i++) {
+		if (element[i].second > S) {
+			break;
+		}
+		if (element[i].second <= S && bought[element[i].first] == false) {
+			S -= element[i].second;
+			bought[element[i].first] = true;
+			count++;
+		}
+	}
+
+	out << count << endl;
+	
+	in.close();
+	out.close();
+
+	return 0;
 }
 \end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача 12 - Эрудит}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Eurasia/12_1.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{OC_Eurasia/12_2.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+\textcolor{red}{\Huge{АНТОН ????}}. \\
+
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Perl]
+#!/usr/bin/perl
+use bigint;
+my @cmap = qw(  rwwgwwwrwwwgwwr
+				wbwwwywwwywwwbw
+				wwbwwwgwgwwwbww
+				gwwbwwwgwwwbwwg
+				wwwwbwwwwwbwwww
+				wywwwwwwwwwwwyw
+				wwgwwwgwgwwwgww
+				rwwgwwwswwwgwwr
+				wwgwwwgwgwwwgww
+				wywwwwwwwwwwwyw
+				wwwwbwwwwwbwwww
+				gwwbwwwgwwwbwwg
+				wwbwwwgwgwwwbww
+				wbwwwywwwywwwbw
+				rwwgwwwrwwwgwwr);
+my @map;
+for (my $i = 0; $i < 16; ++$i) {
+	for (my $j = 0; $j < 16; ++$j) {
+		$map[$i][$j] = 0;
+	}
+}
+my @alp = (1,3,2,3,2,1,5,5,1,2,2,2,2,1,1,2,2,2,2,3,10,5,10,5,10,10,10,5,5,10,10,3);
+
+my %cl = 
+   (w => 1,
+    s => 1,
+    g => 2,
+    y => 3,
+    b => 1,
+    r => 1);
+
+my %cw = 
+   (w => 1,
+    s => 1,
+    g => 1,
+    y => 1,
+    b => 2,
+    r => 3);
+
+sub getColor {
+	my ($x, $y) = @_;
+	substr $cmap[$y-1], $x-1, 1;
+}
+my $str;
+$str = <ARGV>;
+chomp $str;
+my ($n, $m) = split(" ", $str);
+my @scores;
+for (my $i = 0; $i < $n; ++$i) {
+	$scores[$i] = 0;
+}
+for (my $si = 0; $si < $m; ++$si) {
+	my $str = <ARGV>;
+	chomp $str;
+	my $w = $str;
+	my $count = 0;
+	my $score = 0;
+	for (my $i = 0; $i < $w; ++$i) {
+		$str = <ARGV>;
+		chomp $str;
+		my @A = split(" ", $str);
+		my $l = shift @A;
+		my $dir = shift @A;
+		my $x = shift @A;
+		my $y = shift @A;
+		my $scoreL = 0;
+		my $scoreW = 1;
+		for my $char (@A) {
+			my $color = getColor($x, $y);
+			unless ($map[$x][$y]) {
+				$map[$x][$y] = 1;
+				++$count;
+			}
+
+			$scoreL += $cl{$color} * $alp[$char-1];
+			$scoreW *= $cw{$color};
+			if ($dir eq 'v') {
+				++$y;
+			}
+			else {
+				++$x;
+			}
+		}
+		$score += $scoreW * $scoreL;
+	}
+	if ($count == 7) {
+		$score += 15;
+	}
+	$scores[$si%$n] += $score;
+}
+print join("\n", @scores), "\n";
+\end{lstlisting}
+
 
 
 
