@@ -1,7 +1,7 @@
 # Contests Report 2016
 
 ## Командные контесты
-### Добавлены
+### Добавлены:
 - 13.09.2015 - Grand Prix of Ukraine - 3 problems solved (1 upsolved);
 - 27.09.2015 - Grand Prix of Japan - 5 problems solved;
 - 04.10.2015 - Grand Prix of Eurasia - 4 problems solved;
@@ -12,7 +12,7 @@
 - 22.11.2015 - Grand Prix of Europe - 3 problems solved;
 - 20.12.2015 - Grand Prix of Peterhof - 4 problems solved;
 
-### Нужно добавить
+### Нужно добавить:
 - 31.01.2016 - Grand Prix of Asia - 3 problems solved;
 - 07.02.2016 - Grand Prix of Saratov - 3 problems solved;
 - 14.02.2016 - Grand Prix of China - 4 problems solved;
