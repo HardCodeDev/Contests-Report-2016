@@ -35,28 +35,28 @@
 \contentsline {subsection}{\numberline {3.1}Codeforces Round 320 Div 2}{214}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Codeforces Round 323 Div 2}{218}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Codeforces Round 324 Div 2}{222}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Codeforces Round 270 Div 2}{225}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Codeforces Round 273 Div 2}{228}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Codeforces Round 274 Div 2}{231}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Codeforces Round 275 Div 2}{237}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}VK Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya }}{239}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9} VK Cup 2015 - \IeC {\CYRU }\IeC {\cyra }\IeC {\cyrishrt }\IeC {\cyrl }\IeC {\cyrd }-\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrd } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{244}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Vekua Cup 2015 \IeC {\CYRL }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrerev }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrp }}{246}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}Mail.ru Russian Code Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya }}{247}{subsection.3.11}
-\contentsline {section}{\numberline {4}\IeC {\CYRZH }\IeC {\cyru }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrm } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrm } \IeC {\CYRYA }\IeC {\cyrk }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrk }\IeC {\cyro } \IeC {\CYRA }.\IeC {\CYRV }.}{250}{section.4}
-\contentsline {subsection}{\numberline {4.1}Codeforces Round 267 Div 2}{250}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Codeforces Round 268 Div 2}{254}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Codeforces \IeC {\CYRO }\IeC {\cyrt }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrt } \IeC {\CYRS }\IeC {\CYRG }\IeC {\CYRA }\IeC {\CYRU } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrch }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrt }\IeC {\cyrsftsn }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl } ACM-ICPC}{258}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Codeforces Round 269 Div 2}{260}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Codeforces Round 270 Div 2}{263}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Codeforces Round 272 Div 2}{266}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Codeforces Round 273 Div 2}{270}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Codeforces Round 274 Div 2}{273}{subsection.4.8}
-\contentsline {subsection}{\numberline {4.9}Codeforces Round 275 Div 2}{279}{subsection.4.9}
-\contentsline {subsection}{\numberline {4.10}Codeforces Round 276 Div 2}{282}{subsection.4.10}
-\contentsline {subsection}{\numberline {4.11}Codeforces Round 277 Div 2}{288}{subsection.4.11}
-\contentsline {subsection}{\numberline {4.12}Codeforces Round 277.5 Div 2}{293}{subsection.4.12}
-\contentsline {subsection}{\numberline {4.13}VK Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya } 2}{302}{subsection.4.13}
-\contentsline {subsection}{\numberline {4.14} VK Cup 2015 - \IeC {\CYRR }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{307}{subsection.4.14}
-\contentsline {subsection}{\numberline {4.15} VK Cup 2015 - \IeC {\CYRU }\IeC {\cyra }\IeC {\cyrishrt }\IeC {\cyrl }\IeC {\cyrd }-\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrd } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{311}{subsection.4.15}
-\contentsline {subsection}{\numberline {4.16}Vekua Cup 2015 \IeC {\CYRL }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrerev }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrp }}{314}{subsection.4.16}
+\contentsline {subsection}{\numberline {3.4}Codeforces Beta Round 40 Div 2}{224}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Codeforces Round 273 Div 2}{227}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Codeforces Round 274 Div 2}{230}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Codeforces Round 275 Div 2}{236}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}VK Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya }}{238}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9} VK Cup 2015 - \IeC {\CYRU }\IeC {\cyra }\IeC {\cyrishrt }\IeC {\cyrl }\IeC {\cyrd }-\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrd } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{243}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Vekua Cup 2015 \IeC {\CYRL }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrerev }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrp }}{245}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Mail.ru Russian Code Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya }}{246}{subsection.3.11}
+\contentsline {section}{\numberline {4}\IeC {\CYRZH }\IeC {\cyru }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrl }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrm } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrm } \IeC {\CYRYA }\IeC {\cyrk }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyrk }\IeC {\cyro } \IeC {\CYRA }.\IeC {\CYRV }.}{249}{section.4}
+\contentsline {subsection}{\numberline {4.1}Codeforces Round 267 Div 2}{249}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Codeforces Round 268 Div 2}{253}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Codeforces \IeC {\CYRO }\IeC {\cyrt }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrt } \IeC {\CYRS }\IeC {\CYRG }\IeC {\CYRA }\IeC {\CYRU } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrch }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrt }\IeC {\cyrsftsn }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrl } ACM-ICPC}{257}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Codeforces Round 269 Div 2}{259}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Codeforces Round 270 Div 2}{262}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Codeforces Round 272 Div 2}{265}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Codeforces Round 273 Div 2}{269}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Codeforces Round 274 Div 2}{272}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}Codeforces Round 275 Div 2}{278}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}Codeforces Round 276 Div 2}{281}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}Codeforces Round 277 Div 2}{287}{subsection.4.11}
+\contentsline {subsection}{\numberline {4.12}Codeforces Round 277.5 Div 2}{292}{subsection.4.12}
+\contentsline {subsection}{\numberline {4.13}VK Cup 2015 \IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrf }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya } 2}{301}{subsection.4.13}
+\contentsline {subsection}{\numberline {4.14} VK Cup 2015 - \IeC {\CYRR }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{306}{subsection.4.14}
+\contentsline {subsection}{\numberline {4.15} VK Cup 2015 - \IeC {\CYRU }\IeC {\cyra }\IeC {\cyrishrt }\IeC {\cyrl }\IeC {\cyrd }-\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrr }\IeC {\cyrd } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyru }\IeC {\cyrn }\IeC {\cyrd } 1}{310}{subsection.4.15}
+\contentsline {subsection}{\numberline {4.16}Vekua Cup 2015 \IeC {\CYRL }\IeC {\cyri }\IeC {\cyrch }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrerev }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrp }}{313}{subsection.4.16}

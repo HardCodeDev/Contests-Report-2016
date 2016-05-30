@@ -6745,126 +6745,56 @@ else
 	end
 end\end{lstlisting}
 
-\newpage
-\textbf{{\large Задача F - Два конверта}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{CT_SGAU/CT_SGAU_F.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Задача на теорию вероятности. Если в открытом конверте денег больше чем $b$, то не нужно менять выбор, иначе нужно поменять, потому что вероятность того, что в другом конверте в 2 раза меньше денег такая же, как и вероятность того, что в другом конверте в 2 раза больше денег. Сложность $O(1)$.\\
-
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-
-using namespace std;
-
-int main() {
-    long long b, c;
-    cin >> b >> b >> c;
-    if (c > b) cout << "Stay with this envelope" << endl;
-    else cout << "Take another envelope" << endl;
-    return 0;
-}
-\end{lstlisting}
-
 
 
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces 270
+%	Codeforces Beta 40
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{Codeforces Round 270 Div 2}
+\subsection{Codeforces Beta Round 40 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{C_270/C_270_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_40/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/472}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/41}}}
 
 \newpage
-\textbf{{\large Задача A - Уроки дизайна задач: учимся у математики}}
+\textbf{{\large Задача A - Перевод}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_270/C_270_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_40/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Нужно найти такие числа $a$ и $b$, чтобы они не были простыми, а $a + b = n$. Для этого положим $a = 4$, а $b = n - 4$. Далее будем проверять, являются ли числа простыми. Если хоть одно из них простое, то инкрементирум $a$ и декрементируем $b$. В конце концов таким образом найдутся искомые $a$ и $b$. Сложность $O(n)$.\\
+В этой задаче нужно проверить, является ли одна строка реверсом другой строки. Делается стандартной функцией reverse(). Сложность $O(n)$.\\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
-bool prime(long long n) {
-    long long sq = sqrt(n);
-    for (long long i = 2; i <= sq; i++)
-        if (n % i == 0)
-            return false;
-    return true;
-}
-using namespace std;
-int main() {
-    long long n;
-    cin >> n;
-    long long a = 4;
-    long long b = n - a;
-    bool ok = false;
-    while (!ok) {
-        if (!prime(a) && !prime(b))
-            ok = true;
-        else { a++; b--; }
-    }
-    cout << a << " " << b << endl;
-    return 0;
-}\end{lstlisting}
-
-\newpage
-\textbf{{\large Задача B - Уроки дизайна задач: учимся у жизни}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{C_270/C_270_B.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Чтобы доставить всех людей на нужные этажи за наименьшее количество времени, отсортируем всех по номеру этажа и будем доставлять их порциями по вместимости лифта. Сложность $O(nlog(n))$.\\
-
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#include <vector>
 #include <algorithm>
+
 using namespace std;
 
 int main() {
-    long n, k;
-    cin >> n >> k;
-    vector<long> floor(n);
-    for (long i = 0; i < n; i++) {
-        cin >> floor[i];
+    string s, t;
+    cin >> s >> t;
+    reverse(t.begin(), t.end());
+    if (s.compare(t) == 0) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
     }
-    sort(floor.begin(), floor.end(), greater<long>());
-
-    long answer = 0;
-
-    for (long long i = 0; i < n; i += k) {
-        answer += 2 * (floor[i] - 1);
-    }
-
-    cout << answer << endl;
-
     return 0;
 }
 \end{lstlisting}
+
 
 
 
