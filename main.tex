@@ -6451,98 +6451,119 @@ print $r;
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces 267
+%	Codeforces 320
 %
 %----------------------------------------------------------------------------------------
 
-\subsection{Codeforces Round 267 Div 2}
+\subsection{Codeforces Round 320 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{C_267/C_267_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_320/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/467}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/579}}}
 
 \newpage
-\textbf{{\large Задача A - Юра и заселение}}
+\textbf{{\large Задача A - Выращиваем бактерии}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_267/C_267_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_320/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Задача на простую реализацию. Достаточно пройти по всем $p_i$ и $q_i$, проверить выполнение условия $p_i + 2 \leq q_i$ и если оно выполняется, то инкрементировать счетчик. Решается за $O(n)$. \\
+В этой задаче нужно вычислить, сколько битов входного числа n являются ненулевыми. Это и будет ответом. Сложность решения $O(n)$. \\
 
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C]
-#include <iostream>
-#include <cmath>
+#include <stdio.h>
+#include <stdint.h>
 
-using namespace std;
-
-int main() {
-    int n = 0;
-    cin >> n;
-    int p = 0, q = 0;
-    int res = 0;
-    for (int i = 0; i < n; i++) {
-        cin >> p >> q;
-        if (p + 2 <= q)
-            res++;
+int main(int argc, const char * argv[]) {
+    long n = 0;
+    scanf("%ld", &n);
+    int i, count = 0;
+    for (i = 0; i < 32; i++) {
+        if (n & (1L << i)) {
+            count++;
+        }
     }
-    cout << res << endl;
+    printf("%d", count);
     return 0;
 }
 \end{lstlisting}
 
 \newpage
-\textbf{{\large Задача B - Федя и новая игра}}
+\textbf{{\large Задача B - Ищем напарника}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_267/C_267_B.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_320/B.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче нужно побитово сравнивать число Феди и числа других игроков и инкрементировать счетчик, если количество различных бит меньше $k$. Задача решается за $O(nb)$, где $b$ -- максимальная разрядность числа.
+Для решения этой задачи будем использовать очередь с приоритетами. При считывании будем помечать каждого участника как не состоящего в команде, а команду вставлять в очередь с приоритемаи по силе. Затем будем доставать команды из очереди и если оба участника еще не состоят в команде, создавать из них команду. Задача решается за $O(n * log(n)$.
 
 \newpage
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
-#include <cmath>
-#include <vector>
+#include <queue>
 
 using namespace std;
 
-int main() {
-    long n, m, k;
-    cin >> n >> m >> k;
-    vector<long> gamers(m + 1);
+typedef struct {
+    long player1;
+    long player2;
+    long power;
+} Team;
 
-    for (int i = 0; i < m + 1; i++)
-        cin >> gamers[i];
-
-    long fedya = gamers[m];
-    long friends = 0;
-    long diffBits = 0;
-
-    for (int i = 0; i < m; i++) {
-        diffBits = 0;
-        for (int j = 0; j < 20; j++) {
-            if (((fedya >> j) & 1) != ((gamers[i] >> j) & 1))
-                diffBits++;
-            if (diffBits > k)
-                break;
-        }
-        if (diffBits <= k)
-            friends++;
+class CompareTeams {
+public:
+    bool operator() (Team a, Team b) {
+        return a.power < b.power;
     }
+};
 
-    cout << friends << endl;
-
+int main(int argc, const char * argv[]) {
+    
+    priority_queue<Team, vector<Team>, CompareTeams> teams;
+    int n;
+    cin >> n;
+    for (int i = 0; i < (2 * n); i++) {
+        for (int j = 0; j < i; j++) {
+            long power;
+            cin >> power;
+            Team team;
+            team.player1 = i + 1;
+            team.player2 = j + 1;
+            team.power = power;
+            teams.push(team);
+        }
+    }
+    
+    vector<long> res(2 * n, -1);
+    
+    int teamCount = 0;
+    
+    while (teamCount != n) {
+        Team team = teams.top();
+        teams.pop();
+        if (res[team.player1 - 1] == -1 && res[team.player2 - 1] == -1) {
+            res[team.player1 - 1] = team.player2;
+            res[team.player2 - 1] = team.player1;
+            teamCount++;
+        }
+        
+    }
+    
+    for (int i = 0; i < 2 * n; i++) {
+        cout << res[i] << " ";
+    }
+    
+    cout << endl;
+    
     return 0;
 }
 \end{lstlisting}
