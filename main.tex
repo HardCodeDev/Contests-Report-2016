@@ -6964,158 +6964,48 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
-%	VK Cup Квалификация
+%	Codeforces 277
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{VK Cup 2015 Квалификация}
+\subsection{Codeforces Round 277 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{VK_Qual/VK_Qual_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_277/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/522}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/486}}}
 
 \newpage
-\textbf{{\large Задача A - Репосты}}
+\textbf{{\large Задача A - Подсчет функции}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{VK_Qual/VK_Qual_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_277/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Так как требуется найти наибольшую цепочку, то задачу можно решить поиском в глубину и запомнить наибольшую длину пути. Сложность $O(N+M)$.\\
+В этой задаче нужно просто определить закономерность по предложенному ряду и написать функцию вычисления значения функции для произвольного входного числа. Сложность $O(1)$.\\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
 
-#define LL  long long
-#define ULL unsigned long long
-using namespace std;
-
-vector<vector<int>> g;
-vector<bool> used;
-int depth = 0;
-int maxDepth = 0;
-
-void dfs(int v) {
-    used[v] = true;
-    depth++;
-    for (vector<int>::iterator i = g[v].begin(); i != g[v].end(); ++i) {
-        if (!used[*i]) {
-            dfs (*i);
-        }
-    }
-    if (depth > maxDepth) {
-        maxDepth = depth;
-    }
-    depth--;
-}
-
-int main(int argc, const char * argv[]) {
-    int n;
-    cin >> n;
-
-    map<string, int> names;
-    vector<pair<string, string> > log(n);
-    string left, right, dummy;
-    int nameNumber = 0;
-
-    for (int i = 0; i < n; i++) {
-        cin >> left >> dummy >> right;
-        transform(left.begin(), left.end(), left.begin(), ::tolower);
-        transform(right.begin(), right.end(), right.begin(), ::tolower);
-        if (names.find(left) == names.end()) {
-            names[left] = nameNumber++;
-        }
-        if (names.find(right) == names.end()) {
-            names[right] = nameNumber++;
-        }
-        log[i].first = left;
-        log[i].second = right;
-    }
-
-    g.resize(names.size(), vector<int>());
-    used.resize(g.size());
-    map<string, int>::iterator from, to;
-
-    for (size_t i = 0; i < log.size(); i++) {
-        from = names.find(log[i].second);
-        to = names.find(log[i].first);
-        g[from->second].push_back(to->second);
-    }
-
-    int start = names.find("polycarp")->second;
-    dfs(start);
-    cout << maxDepth << endl;
-
-    return 0;
-}
-\end{lstlisting}
-
-\newpage
-\textbf{{\large Задача B - Фото на память}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{VK_Qual/VK_Qual_B.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-В этой задаче нужно знать высоту самого высокого и второго по высоте. Это можно сделать с помощью $k$-й порядковой статистики. А потом нужно посчитать количество пикселей. Можно заметить, что высота фотографии всегда будет равна высоте самого высокого из друзей, и один раз высоте второго по высоте.
-
-\newpage
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-
-#define LL  long long
-#define ULL unsigned long long
 using namespace std;
 
 int main() {
-	int temp = 0;
-
-	LL n;
-	cin >> n;
-
-	vector <int> width(n);
-	vector <int> height(n);
-	vector <int> height_2(n);
-
-	int max_h = 0, premax_h = 0;
-	LL sum_w = 0;
-
-	for (int i = 0; i < n; i++) {
-
-		cin >> width[i] >> height[i];
-		height_2[i] = height[i];
-
-		sum_w += width[i];
-	}
-
-	nth_element(height_2.begin(), height_2.end() - 1, height_2.end());
-	max_h = height_2[n - 1];
-	nth_element(height_2.begin(), height_2.end() - 2, height_2.end());
-	premax_h = height_2[n - 2];
-
-	LL temp_sum, temp_max;
-	for (int i = 0; i < n; i++) {
-		temp_sum = sum_w - width[i];
-		if (height[i] == max_h)
-			temp_max = premax_h;
-		else temp_max = max_h;
-		cout << temp_sum * temp_max << " ";
-	}
-	return 0;
+    long long n;
+    cin >> n;
+    long long ans = n / 2;
+    if (n % 2 != 0) {
+        ans = -ans - 1;
+    }
+    cout << ans << endl;
+    return 0;
 }
 \end{lstlisting}
-
-
 
 
 
