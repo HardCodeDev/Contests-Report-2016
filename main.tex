@@ -6572,7 +6572,7 @@ int main(int argc, const char * argv[]) {
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces 268
+%	Codeforces 323
 %
 %----------------------------------------------------------------------------------------
 
@@ -6581,113 +6581,108 @@ int main(int argc, const char * argv[]) {
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{C_268/C_268_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_323/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/469}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/583}}}
 
 \newpage
-\textbf{{\large Задача A - I Wanna Be the Guy}}
+\textbf{{\large Задача A - Асфальтирование дорог}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_268/C_268_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_320/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче нужно проверить, дает ли объединение чисел $a_1, a_2, ... , a_p$ и $a_1, a_2, ... , a_q$ множество чисел $1, 2, ... , n$. Решается за $O(n)$.\\
+В этой задаче нужно заметить, что так как изначально не заасфальтирована ни одна дорога, то бригада сможет асфальтировать только на тех перекрестках, чьи оба индекса совпадают. Поэтому в ответ пойдет номер дня, когда индексы будут одинаковые. Решается за считывание.\\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
-#include <vector>
+
 using namespace std;
-int main() {
-    int n, p, q, num;
+
+int main(int argc, const char * argv[]) {
+    
+    int n;
     cin >> n;
-    long sum = ((1 + n) * n) / 2;
-    vector<bool> v(n + 1, false);
-    cin >> p;
-    for (int i = 0; i < p; i++) {
-        cin >> num;
-        sum -= num;
-        v[num] = true;
+    int a, b;
+    
+    for (int i = 0; i < n * n; i++) {
+        cin >> a >> b;
+        if (a == b) {
+            cout << i + 1 << " ";
+        }
     }
-    cin >> q;
-    for (int i = 0; i < q; i++) {
-        cin >> num;
-        if (!v[num]) sum -= num;
-        v[num] = true;
-    }
-    if (sum)
-        cout << "Oh, my keyboard!" << endl;
-    else
-        cout << "I become the guy." << endl;
+    
     return 0;
 }
 \end{lstlisting}
 
 \newpage
-\textbf{{\large Задача B - Онлайн чат}}
+\textbf{{\large Задача B - Задача робота}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_268/C_268_B.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_323/B.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Создадим вектор всех моментов времени и пометим все моменты, когда не спит Little Z. Далее будем смотреть время Little X и инкрементировать ответ, если у Little Z помечено время, в которое не спит Little X. Решается за $O(rq)$.\\
+Задача на реализацию. Нужно симулировать движение робота. Решается за $O(n^2)$.\\
+
+\newpage
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
-#include <cmath>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
-int main() {
-
-    int p, q, l, r;
-    cin >> p >> q >> l >> r;
-
-    vector< pair<int, int> > timesX(q);
-    vector<bool> timesZ(1002, false);
-    pair<int, int> z;
-
-    for (int i = 0; i < p; i++) {
-        cin >> z.first >> z.second;
-        for (int j = z.first; j <= z.second; j++)
-            timesZ[j] = true;
+int main(int argc, const char * argv[])
+{
+    int n;
+    cin >> n;
+    
+    vector<pair<int, bool> > v(n);
+    for (int i = 0; i < n; i++) {
+        pair<int, bool> temp;
+        cin >> temp.first;
+        temp.second = false;
+        v[i] = temp;
     }
-
-    for (int i = 0; i < q; i++)
-        cin >> timesX[i].first >> timesX[i].second;
-
-    bool marker = false;
-    int answer = 0;
-
-    for (int i = l; i <= r; i++) {
-        marker = false;
-        for (int j = 0; j < q; j++) {
-            for (int k = timesX[j].first + i; k <= timesX[j].second + i; k++) {
-                if (k > 1000) {
-                    marker = true;
-                    break;
-                }
-                if (timesZ[k] == true) {
-                    marker = true;
-                    answer++;
-                }
-                if (marker) break;
+    
+    int data = 0;
+    int switch_count = 0;
+    int i = 0;
+    bool to_right = true;
+    
+    while (data != n) {
+        if (!v[i].second && data >= v[i].first) {
+            data++;
+            v[i].second = true;
+        }
+        
+        to_right ? i++ : i--;
+        
+        if (i == n) {
+            to_right = false;
+            i = n - 1;
+            if (data != n) {
+                switch_count++;
             }
-            if (marker) break;
+        } else if (i == -1) {
+            to_right = true;
+            i = 0;
+            if (data != n) {
+                switch_count++;
+            }
         }
     }
-
-    cout << answer << endl;
-
+    
+    cout << switch_count << endl;
+    
     return 0;
 }
 \end{lstlisting}
