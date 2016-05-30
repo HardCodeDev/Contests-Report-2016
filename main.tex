@@ -6440,6 +6440,9 @@ print $r;
 
 
 
+
+
+
 %----------------------------------------------------------------------------------------
 %
 %	ЛИЧНЫЕ КОНТЕСТЫ
@@ -6577,7 +6580,7 @@ int main(int argc, const char * argv[]) {
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{Codeforces Round 268 Div 2}
+\subsection{Codeforces Round 323 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
@@ -6691,93 +6694,56 @@ int main(int argc, const char * argv[])
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces Отборочный контест СГАУ на четвертьфинал ACM ICPC
+%	Codeforces 324
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{Codeforces Отборочный контест СГАУ на четвертьфинал ACM-ICPC}
+\subsection{Codeforces Round 324 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{CT_SGAU/CT_SGAU_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_324/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/gym/100488}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/gym/584}}}
 
 \newpage
-\textbf{{\large Задача D - Игрушечные солдатики}}
+\textbf{{\large Задача A - Олеся и Родион}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{CT_SGAU/CT_SGAU_D.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_324/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Запомним цвета всех солдатиков. Затем будем идти по всем солдатикам, перекрашивать его в новый цвет и проверять, совпадают ли цвета всех солдатиков после перекраски. Если найдено состояние, когда все цвета совпадают -- нужно завершить проход и вывести ответ. Работает за $O(nm)$.
+В этой задаче нужно построить строку представляющую число, которое делится на $t$ и имеет длину $n$ знаков. Сначала нужно определить голову числа, это будет число, которое делится на $n$. Затем мы делаем из него число кратное 10 путем добавления оставшихся нулей. Если это количество нулей отрицательное, значит число нельзя построить и ответ будет -1. Сложность - $O(n)$. \\
 
-\newpage
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#define ll unsigned long long
-
-using namespace std;
-
-int main() {
-ll n, m;
-    ll remColor = 0;
-    ll currentSoldier, currentColor, answer = 0;
-    bool sameColors = true;
-    cin >> n;
-    vector<ll> soldiers(n + 1);
-    for (ll i = 1; i <= n; i++) {
-        cin >> soldiers[i];
-        if (i == 1) remColor = soldiers[i];
-        else if (soldiers[i] != remColor) sameColors = false;
-    }
-    if (sameColors) {
-        cout << "0" << endl;
-        return 0;
-    }
-    cin >> m;
-    sameColors = true;
-    bool flag = true;
-
-    for (ll i = 0; i < m; i++) {
-        sameColors = false;
-        flag = true;
-        cin >> currentSoldier >> currentColor;
-        soldiers[currentSoldier] = currentColor;
-        if (i == 0) remColor = currentColor;
-        if (currentColor == remColor) {
-            for (ll j = 1; j <= n; j++) {
-                if (soldiers[j] != remColor) {
-                    flag = false;
-                    break;
-                }
-            }
-            if (flag) sameColors = true;
-        }
-        if (sameColors) {
-            answer = i + 1;
-            break;
-        }
-        remColor = currentColor;
-    }
-
-    if (sameColors) {
-        cout << answer << endl;
-    }
-    else {
-        cout << "-1" << endl;
-    }
-
-	return 0;
-}
-\end{lstlisting}
+\begin{lstlisting}[language=Ruby]
+input = gets.split(" ")
+n = input[0].to_i
+t = input[1].to_i
+rest = n
+answer = ""
+answer += t.to_s
+if t == 10
+	rest -= 2
+else
+	rest -= 1
+end
+if rest < 0
+	puts "-1"
+else
+	if rest == 0
+		puts answer
+	else
+		for i in 0...rest
+			answer += "0"
+		end
+		puts answer
+	end
+end\end{lstlisting}
 
 \newpage
 \textbf{{\large Задача F - Два конверта}}
@@ -6805,46 +6771,6 @@ int main() {
 }
 \end{lstlisting}
 
-\newpage
-\textbf{{\large Задача G - Задача о размене монет}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{CT_SGAU/CT_SGAU_G.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Для начала нужно найти, где находится самая дорогая монета, которая не дороже необходимой суммы $s$. После этого будем набирать сумму последовательно с наибольшей монеты. Работает за $O(n)$. \\
-
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#include <vector>
-using namespace std;
-int main() {
-    unsigned long long n, s, startIndex, coinsNeeded = 0;
-    cin >> n >> s;
-    vector<unsigned long long> k(n + 1);
-    k[0] = 1;
-    startIndex = n;
-    for (unsigned long long i = 1; i <= n; i++) {
-        cin >> k[i];
-        if (k[i] * k[i - 1] > s) {
-            startIndex = i - 1;
-            break;
-        }
-        k[i] *= k[i - 1];
-    }
-    for (unsigned long long i = startIndex; ; i--) {
-        coinsNeeded += s / k[i];
-        s %= k[i];
-        if (s == 0 || i == 0)
-            break;
-    }
-    cout << coinsNeeded << endl;
-    return 0;
-}
-\end{lstlisting}
 
 
 
