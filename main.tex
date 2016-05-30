@@ -6825,6 +6825,8 @@ int main() {
 
 В этой задаче достаточно заметить, что победа игрока зависит от размера сетки. Если минимальное число из размеров сетки четное, то победит Malvika, иначе победит Akshat. Сложность $O(1)$.\\
 
+\newpage
+
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C++]
 #include <iostream>
@@ -6856,163 +6858,56 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces 274
+%	Codeforces 196
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{Codeforces Round 274 Div 2}
+\subsection{Codeforces Round 196 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{C_274/C_274_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_196/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/480}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/337}}}
 
 \newpage
-\textbf{{\large Задача А - Выражение}}
+\textbf{{\large Задача А - Пазлы}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_274/C_274_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_196/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Всего может быть 6 вариантов выражения, поэтому просто переберем все варианты и выберем наибольший ответ. Сложность алгоритма $O(1)$.\\
+Для решения этой задачи нужно отсортировать имеющиеся в магазине пазлы, а затем пройти по всем пазлам циклом и сравнить позицию $i$ и позицию $i + n - 1$. При этом нужно запоминать минимальную разницу, которая будет ответом. Сложность алгоритма $O(nlog(n))$.\\
+
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
 using namespace std;
 int main() {
-    int a, b, c;
-    cin >> a >> b >> c;
-    int s;
-    int answer = 0;
-    s = a + b + c;
-    if (s > answer) answer = s;
-    s = a * b + c;
-    if (s > answer) answer = s;
-    s = a + b  * c;
-    if (s > answer) answer = s;
-    s = a * b * c;
-    if (s > answer) answer = s;
-    s = (a + b) * c;
-    if (s > answer) answer = s;
-    s = a * (b + c);
-    if (s > answer) answer = s;
-    cout << answer << endl;
-    return 0;
-}
-\end{lstlisting}
-
-\newpage
-\textbf{{\large Задача B - Башни}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{C_274/C_274_B.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Отсортируем башни по высоте и будем перекладывать кубик с самой высокой на самую низкую. После этого нужно снова отсортировать новые высоты. Это нужно проделать $k$ раз. Сложность алгоритма $O(knlog(n))$.\\
-
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-using namespace std;
-
-typedef struct {
-    int n, h;
-} tow;
-
-bool cmp(const tow &a, const tow &b) {
-    return a.h > b.h;
-}
-
-int main() {
-    int n, k;
-    cin >> n >> k;
-    vector<tow> t(n);
-    vector<pair<int, int>> actions;
-    for (int i = 0; i < n; i++) {
-        cin >> t[i].h;
-        t[i].n = i + 1;
+    int n, m;
+    cin >> n >> m;
+    vector<int> puzzle(m);
+    for (int i = 0; i < m; i++) {
+        cin >> puzzle[i];
     }
-    pair<int, int> move;
-    int min = inf;
-    vector<int> states(k + 1);
-    sort(t.begin(), t.end(), cmp);
-    states[0] = t[0].h - t[n - 1].h;
-    for (int i = 1; i <= k; i++) {
-        t[0].h--;
-        t[n - 1].h++;
-        move.first = t[0].n;
-        move.second = t[n - 1].n;
-        actions.push_back(move);
-        sort(t.begin(), t.end(), cmp);
-        states[i] = t[0].h - t[n - 1].h;
-    }
-    int minPos = -1;
-    for (int i = 0; i < k + 1; i++) {
-        if (states[i] < min) {
-            min = states[i];
-            minPos = i;
+    sort(puzzle.begin(), puzzle.end());
+    int min = INT_MAX;
+    for (int i = 0; i < m - n + 1; i++) {
+        int diff = puzzle[i + n - 1] - puzzle[i];
+        if (diff < min) {
+            min = diff;
         }
     }
-    cout << min << " " << minPos << endl;
-    for (int i = 0; i < minPos; i++) cout << actions[i].first << " " << actions[i].second << endl;
+    cout << min << endl;
     return 0;
 }
 \end{lstlisting}
 
-\newpage
-\textbf{{\large Задача C - Экзамены}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{C_274/C_274_C.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Для решения этой задачи нужно отсортировать экзамены сначала по дате сдачи по расписанию, а затем устойчиво отсортировать по датам досрочной сдачи. Потом нужно пройти по отсортированным датам и если у текущего экзамена досрочная дата раньше чем досрочная предыдущего, то текущий нужно сдавать по расписанию. Сложность алгоритма $O(nlog(n))$.
-
-\newpage
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-using namespace std;
-
-bool cmp_pair_first(const pair<LL, LL> &a, const pair<LL, LL> &b) {
-    return a.first < b.first;
-}
-
-bool cmp_pair_second(const pair<LL, LL> &a, const pair<LL, LL> &b) {
-    return (a.second < b.second) && (a.first == b.first);
-}
-
-int main() {
-    int n;
-    cin >> n;
-    vector<pair<LL, LL>> e(n);
-    LL maxFirst = -1, maxSecond = -1;
-    for (int i = 0; i < n; i++) {
-        cin >> e[i].first >> e[i].second;
-        if (e[i].first  > maxFirst)  maxFirst  = e[i].first;
-        if (e[i].second > maxSecond) maxSecond = e[i].second;
-    }
-    sort(e.begin(), e.end(), cmp_pair_first);
-    stable_sort(e.begin(), e.end(), cmp_pair_second);
-    for (int i = 1; i < n; i++) {
-        if (e[i].second < e[i - 1].second) {
-            e[i].second = e[i].first;
-        }
-    }
-    cout << e[n - 1].second << endl;
-    return 0;
-}
-\end{lstlisting}
 
 
 
