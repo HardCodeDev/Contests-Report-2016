@@ -6800,91 +6800,57 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
-%	Codeforces 273
+%	Codeforces 258
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{Codeforces Round 273 Div 2}
+\subsection{Codeforces Round 258 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{C_273/C_273_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_258/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/478}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/451}}}
 
 \newpage
-\textbf{{\large Задача A - Начальная ставка}}
+\textbf{{\large Задача A - Игра с палочками}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{C_273/C_273_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_258/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-В этой задаче достаточно заметить, что суммарное количество монет должно без остатка делиться на 5. Иначе исход игры невозможен. Сложность $O(1)$.\\
+В этой задаче достаточно заметить, что победа игрока зависит от размера сетки. Если минимальное число из размеров сетки четное, то победит Malvika, иначе победит Akshat. Сложность $O(1)$.\\
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
+\begin{lstlisting}[language=C++]
 #include <iostream>
+#include <algorithm>
 
-#define LL  long long
-#define ULL unsigned long long
 using namespace std;
 
 int main() {
-    LL c1, c2, c3, c4, c5;
-    cin >> c1 >> c2 >> c3 >> c4 >> c5;
-
-    c1 = c1 + c2 + c3 + c4 + c5;
-
-    if (c1 % 5 == 0 && c1) {
-        cout << c1 / 5 << endl;
-    }
-    else cout << "-1" << endl;
-
-    return 0;
-}
-\end{lstlisting}
-
-\newpage
-\textbf{{\large Задача B - Случайные команды}}
-
-\begin{center}
-\includegraphics[width=0.9\textwidth]{C_273/C_273_B.png}\\ [1cm]
-\end{center}
-
-\textbf{{\large Алгоритм}}
-
-Задача на комбинаторику. Минимальное количество получается если всех разделить на команды поровну, а максимальное если в одну из команд поместить максимально возможное количество участников. Сложность $O(nlog(1))$.\\
-
-\textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
-#include <iostream>
-#define LL  long long
-using namespace std;
-LL fun(LL n) {
-    return (n * n - n) / 2;
-}
-int main() {
-    LL n, m;
+    int n, m;
     cin >> n >> m;
-    LL min, max;
-    LL k = n - (m - 1);
-    max = fun(k);
-    LL g = n / m;
-    if (n % m == 0) {
-        min = m * fun(g);
+    int t = n;
+    
+    if (n != m) {
+        t = min(n, m);
     }
-    else {
-        min = (m - (n % m)) * fun(g);
-        min += (n % m) * fun(g + 1);
+    
+    if (t % 2 == 0) {
+        cout << "Malvika" << endl;
+    } else {
+        cout << "Akshat" << endl;
     }
-    cout << min << " " << max << endl;
+    
     return 0;
 }
 \end{lstlisting}
+
 
 
 
