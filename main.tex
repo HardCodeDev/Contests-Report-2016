@@ -7080,6 +7080,185 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
+%	VK Cup 
+%
+%----------------------------------------------------------------------------------------
+
+\newpage
+\subsection{VK Cup 2016 - Квалификация 2}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{VK_Q2/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/638}}}
+
+\newpage
+\textbf{{\large Задача A - Номера домов}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{VK_Q2/A.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения этой задачи нужно вывести формулу. Сложность $O(1)$.\\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n, a = gets.split(' ').map(&:to_i)
+puts a.even? ? 1 + n / 2 - a / 2 : 1 + a / 2
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача B - Сборка генома в Берляндии}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{VK_Q2/B.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения этой задачи нужно составить из заданных строк составить большую строку, учитывая что маленькие строки могут пересекаться. Сложность $O(n^2)$.\\
+
+\newpage
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+class GenomPart
+    @genom
+    @chars
+    def initialize
+        @genom = ""
+        @chars = []
+    end
+    def is_valid_part(part)
+        if @genom == ""
+            return true
+        end
+        for i in (0...part.size)
+            if @chars.include?(part[i])
+                return true
+            end
+        end
+        return false
+    end
+    def insert_part(part)
+        if @genom == ""
+            @genom = part
+            @chars = part.chars
+            return
+        end
+        @chars |= part.chars
+        count = @genom.count(part)
+        if count == @genom.size # genon is substring of part
+            @genom = part
+            #@chars = part.chars
+        elsif count == part.size
+            # nothing
+        else
+            if @genom.index(part[0...count]) != nil
+                @genom = (@genom.chars | part.chars).join
+            else
+                @genom = (part.chars | @genom.chars).join
+            end
+            #@chars = @genom.chars
+        end
+    end
+    def genom
+        @genom
+    end
+end
+
+n = gets.to_i
+parts = []
+n.times do
+    s = gets.chomp
+    parts.push(s)
+end
+
+genom_parts = []
+while !parts.empty?
+    genom = GenomPart.new
+    while true
+        action = false
+        temp = parts.clone
+        temp.each do |item|
+            if genom.is_valid_part(item)
+                action = true
+                genom.insert_part(item)
+                parts.delete(item)
+            end
+        end
+        if !action
+            break
+        end
+    end
+    genom_parts.push(genom)
+end
+
+answer = ""
+genom_parts.each do |part|
+    answer += part.genom
+end
+
+puts answer
+\end{lstlisting}
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	VK Cup 
+%
+%----------------------------------------------------------------------------------------
+
+\newpage
+\subsection{VK Cup 2016 - Квалификация 1}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{VK_Q1/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/638}}}
+
+\newpage
+\textbf{{\large Задача B - Порядок чатов}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{VK_Q1/B.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения этой задачи нужно вставить все имена в массив, а затем доставать их по одному и проверять наличие в множестве. Если в множестве этого имени нет, то вывести его и добавить в множество. Сложность $O(log(n))$.\\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+chats = []
+n.times do
+    chats.push(gets.chomp)
+end
+s = Set.new
+chats.reverse.each do |name|
+    if !s.include?(name)
+        puts name
+        s << name
+    end
+end
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
 %	Vekua Cup personal
 %
 %----------------------------------------------------------------------------------------
