@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.2)  31 MAY 2016 02:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.2)  31 MAY 2016 02:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -5168,11 +5168,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7023--7024
 
  []
 
-<VK_1/VK_1_result.png, id=6042, 888.31876pt x 406.51875pt>
-File: VK_1/VK_1_result.png Graphic file (type png)
- <use VK_1/VK_1_result.png>
-Package pdftex.def Info: VK_1/VK_1_result.png used on input line 7025.
-(pdftex.def)             Requested size: 486.54057pt x 222.64934pt.
+<C_103/result.png, id=6042, 891.33pt x 243.91125pt>
+File: C_103/result.png Graphic file (type png)
+ <use C_103/result.png>
+Package pdftex.def Info: C_103/result.png used on input line 7025.
+(pdftex.def)             Requested size: 486.54057pt x 133.14299pt.
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 7030.
 Package babel Info: Redefining russian shorthand "~
@@ -5181,536 +5181,516 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 7030.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 7030.
- [235 <./VK_1/VK_1_result.png>] <VK_1/VK_1_A.png, id=6048, 875.27pt x 316.18124pt>
-File: VK_1/VK_1_A.png Graphic file (type png)
- <use VK_1/VK_1_A.png>
-Package pdftex.def Info: VK_1/VK_1_A.png used on input line 7034.
-(pdftex.def)             Requested size: 460.93153pt x 166.50903pt.
+ [235 <./C_103/result.png>] <C_103/A.png, id=6049, 883.3pt x 726.715pt>
+File: C_103/A.png Graphic file (type png)
+ <use C_103/A.png>
+Package pdftex.def Info: C_103/A.png used on input line 7034.
+(pdftex.def)             Requested size: 460.93153pt x 379.22462pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7039--7040
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 7041--7042
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7041.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7041.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7041.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7041.
+[236 <./C_103/A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7043--7044
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7076.
+(babel)             in language  on input line 7087.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7076.
+(babel)             in language  on input line 7087.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7076.
+(babel)             in language  on input line 7087.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7076.
-[236 <./VK_1/VK_1_A.png>]
+(babel)             in language  on input line 7087.
+[237]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7077.
+(babel)             in language  on input line 7088.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7077.
+(babel)             in language  on input line 7088.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7079--7080
+Underfull \hbox (badness 10000) in paragraph at lines 7090--7091
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7081--7082
+Underfull \hbox (badness 10000) in paragraph at lines 7092--7093
 
  []
 
-<Vekua_personal/Vekua_personal_result.png, id=6078, 687.56876pt x 36.135pt>
+<Vekua_personal/Vekua_personal_result.png, id=6093, 687.56876pt x 36.135pt>
 File: Vekua_personal/Vekua_personal_result.png Graphic file (type png)
  <use Vekua_personal/Vekua_personal_result.png>
-Package pdftex.def Info: Vekua_personal/Vekua_personal_result.png used on input line 7083.
+Package pdftex.def Info: Vekua_personal/Vekua_personal_result.png used on input line 7094.
 (pdftex.def)             Requested size: 486.54057pt x 25.56999pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7095.
+(babel)             in language  on input line 7106.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7095.
+(babel)             in language  on input line 7106.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7095.
+(babel)             in language  on input line 7106.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7095.
- [237 <./Vekua_personal/Vekua_personal_result.png>]
+(babel)             in language  on input line 7106.
+ [238 <./Vekua_personal/Vekua_personal_result.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7096.
+(babel)             in language  on input line 7107.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7096.
+(babel)             in language  on input line 7107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7098--7099
+Underfull \hbox (badness 10000) in paragraph at lines 7109--7110
 
  []
 
-<RCC/RCC_result.png, id=6084, 759.83875pt x 309.155pt>
+<RCC/RCC_result.png, id=6099, 759.83875pt x 309.155pt>
 File: RCC/RCC_result.png Graphic file (type png)
  <use RCC/RCC_result.png>
-Package pdftex.def Info: RCC/RCC_result.png used on input line 7100.
+Package pdftex.def Info: RCC/RCC_result.png used on input line 7111.
 (pdftex.def)             Requested size: 486.54057pt x 197.9623pt.
 
-Overfull \hbox (18.50223pt too wide) in paragraph at lines 7103--7104
+Overfull \hbox (18.50223pt too wide) in paragraph at lines 7114--7115
 []\T2A/cmr/bx/n/14.4 —сылка на кон-тест: [][]$http : / / www . russiancodecup . ru / championship / round /
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7105.
+(babel)             in language  on input line 7116.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7105.
+(babel)             in language  on input line 7116.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7105.
+(babel)             in language  on input line 7116.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7105.
-[238 <./RCC/RCC_result.png>] <RCC/RCC_A.png, id=6091, 941.5175pt x 787.94376pt>
+(babel)             in language  on input line 7116.
+[239 <./RCC/RCC_result.png>] <RCC/RCC_A.png, id=6106, 941.5175pt x 787.94376pt>
 File: RCC/RCC_A.png Graphic file (type png)
  <use RCC/RCC_A.png>
-Package pdftex.def Info: RCC/RCC_A.png used on input line 7109.
+Package pdftex.def Info: RCC/RCC_A.png used on input line 7120.
 (pdftex.def)             Requested size: 460.93153pt x 385.74715pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7116.
+(babel)             in language  on input line 7127.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7116.
+(babel)             in language  on input line 7127.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7116.
+(babel)             in language  on input line 7127.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7116.
- [239 <./RCC/RCC_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7117--7118
+(babel)             in language  on input line 7127.
+ [240 <./RCC/RCC_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7128--7129
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7153.
+(babel)             in language  on input line 7164.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7153.
+(babel)             in language  on input line 7164.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7153.
+(babel)             in language  on input line 7164.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7153.
-[240]
+(babel)             in language  on input line 7164.
+[241]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7154.
+(babel)             in language  on input line 7165.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7154.
+(babel)             in language  on input line 7165.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7162.
+(babel)             in language  on input line 7173.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7162.
+(babel)             in language  on input line 7173.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7164--7165
+Underfull \hbox (badness 10000) in paragraph at lines 7175--7176
 
  []
 
-<C_267/A_C_267_result.png, id=6126, 884.30376pt x 250.9375pt>
+<C_267/A_C_267_result.png, id=6141, 884.30376pt x 250.9375pt>
 File: C_267/A_C_267_result.png Graphic file (type png)
  <use C_267/A_C_267_result.png>
-Package pdftex.def Info: C_267/A_C_267_result.png used on input line 7166.
+Package pdftex.def Info: C_267/A_C_267_result.png used on input line 7177.
 (pdftex.def)             Requested size: 486.54057pt x 138.06581pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7171.
+(babel)             in language  on input line 7182.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7171.
+(babel)             in language  on input line 7182.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7171.
+(babel)             in language  on input line 7182.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7171.
- [241 <./C_267/A_C_267_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7172--7173
+(babel)             in language  on input line 7182.
+ [242 <./C_267/A_C_267_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7183--7184
 
  []
 
-<C_267/C_267_A.png, id=6132, 876.27374pt x 466.74374pt>
+<C_267/C_267_A.png, id=6147, 876.27374pt x 466.74374pt>
 File: C_267/C_267_A.png Graphic file (type png)
  <use C_267/C_267_A.png>
-Package pdftex.def Info: C_267/C_267_A.png used on input line 7174.
+Package pdftex.def Info: C_267/C_267_A.png used on input line 7185.
 (pdftex.def)             Requested size: 460.93153pt x 245.51418pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7179--7180
+Underfull \hbox (badness 10000) in paragraph at lines 7190--7191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7181--7182
+Underfull \hbox (badness 10000) in paragraph at lines 7192--7193
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7203.
+(babel)             in language  on input line 7214.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7203.
+(babel)             in language  on input line 7214.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7203.
+(babel)             in language  on input line 7214.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7203.
-[242 <./C_267/C_267_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7204--7205
+(babel)             in language  on input line 7214.
+[243 <./C_267/C_267_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7215--7216
 
  []
 
-<C_267/C_267_B.png, id=6157, 880.28876pt x 579.16376pt>
+<C_267/C_267_B.png, id=6172, 880.28876pt x 579.16376pt>
 File: C_267/C_267_B.png Graphic file (type png)
  <use C_267/C_267_B.png>
-Package pdftex.def Info: C_267/C_267_B.png used on input line 7206.
+Package pdftex.def Info: C_267/C_267_B.png used on input line 7217.
 (pdftex.def)             Requested size: 460.93153pt x 303.25249pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7213.
+(babel)             in language  on input line 7224.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7213.
+(babel)             in language  on input line 7224.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7213.
+(babel)             in language  on input line 7224.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7213.
- [243 <./C_267/C_267_B.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7214--7215
+(babel)             in language  on input line 7224.
+ [244 <./C_267/C_267_B.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7225--7226
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7262.
+(babel)             in language  on input line 7273.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7262.
+(babel)             in language  on input line 7273.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7262.
+(babel)             in language  on input line 7273.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7262.
-[244]
+(babel)             in language  on input line 7273.
+[245]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7263.
+(babel)             in language  on input line 7274.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7263.
+(babel)             in language  on input line 7274.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7266--7267
+Underfull \hbox (badness 10000) in paragraph at lines 7277--7278
 
  []
 
-<C_268/A_C_268_result.png, id=6204, 885.3075pt x 251.94125pt>
+<C_268/A_C_268_result.png, id=6219, 885.3075pt x 251.94125pt>
 File: C_268/A_C_268_result.png Graphic file (type png)
  <use C_268/A_C_268_result.png>
-Package pdftex.def Info: C_268/A_C_268_result.png used on input line 7268.
+Package pdftex.def Info: C_268/A_C_268_result.png used on input line 7279.
 (pdftex.def)             Requested size: 486.54057pt x 138.46046pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7273.
+(babel)             in language  on input line 7284.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7273.
+(babel)             in language  on input line 7284.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7273.
+(babel)             in language  on input line 7284.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7273.
- [245 <./C_268/A_C_268_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7274--7275
+(babel)             in language  on input line 7284.
+ [246 <./C_268/A_C_268_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7285--7286
 
  []
 
-<C_268/C_268_A.png, id=6210, 875.27pt x 493.845pt>
+<C_268/C_268_A.png, id=6226, 875.27pt x 493.845pt>
 File: C_268/C_268_A.png Graphic file (type png)
  <use C_268/C_268_A.png>
-Package pdftex.def Info: C_268/C_268_A.png used on input line 7276.
+Package pdftex.def Info: C_268/C_268_A.png used on input line 7287.
 (pdftex.def)             Requested size: 460.93153pt x 260.07126pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7283.
+(babel)             in language  on input line 7294.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7283.
+(babel)             in language  on input line 7294.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7283.
+(babel)             in language  on input line 7294.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7283.
- [246 <./C_268/C_268_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7284--7285
+(babel)             in language  on input line 7294.
+ [247 <./C_268/C_268_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7295--7296
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7322.
+(babel)             in language  on input line 7333.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7322.
+(babel)             in language  on input line 7333.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7322.
+(babel)             in language  on input line 7333.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7322.
-[247]
-Underfull \hbox (badness 10000) in paragraph at lines 7323--7324
+(babel)             in language  on input line 7333.
+[248]
+Underfull \hbox (badness 10000) in paragraph at lines 7334--7335
 
  []
 
-<C_268/C_268_B.png, id=6255, 873.2625pt x 601.24625pt>
+<C_268/C_268_B.png, id=6271, 873.2625pt x 601.24625pt>
 File: C_268/C_268_B.png Graphic file (type png)
  <use C_268/C_268_B.png>
-Package pdftex.def Info: C_268/C_268_B.png used on input line 7325.
+Package pdftex.def Info: C_268/C_268_B.png used on input line 7336.
 (pdftex.def)             Requested size: 460.93153pt x 317.35623pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7330--7331
+Underfull \hbox (badness 10000) in paragraph at lines 7341--7342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7332--7333
+Underfull \hbox (badness 10000) in paragraph at lines 7343--7344
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7366.
+(babel)             in language  on input line 7377.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7366.
+(babel)             in language  on input line 7377.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7366.
+(babel)             in language  on input line 7377.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7366.
-[248 <./C_268/C_268_B.png>]
+(babel)             in language  on input line 7377.
+[249 <./C_268/C_268_B.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7367.
+(babel)             in language  on input line 7378.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7367.
+(babel)             in language  on input line 7378.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7369--7370
+Underfull \hbox (badness 10000) in paragraph at lines 7380--7381
 
  []
 
-<CT_SGAU/A_CT_SGAU_result.png, id=6284, 884.30376pt x 557.08125pt>
+<CT_SGAU/A_CT_SGAU_result.png, id=6299, 884.30376pt x 557.08125pt>
 File: CT_SGAU/A_CT_SGAU_result.png Graphic file (type png)
  <use CT_SGAU/A_CT_SGAU_result.png>
-Package pdftex.def Info: CT_SGAU/A_CT_SGAU_result.png used on input line 7371.
+Package pdftex.def Info: CT_SGAU/A_CT_SGAU_result.png used on input line 7382.
 (pdftex.def)             Requested size: 486.54057pt x 306.50613pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7376.
+(babel)             in language  on input line 7387.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7376.
+(babel)             in language  on input line 7387.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7376.
+(babel)             in language  on input line 7387.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7376.
- [249 <./CT_SGAU/A_CT_SGAU_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7377--7378
+(babel)             in language  on input line 7387.
+ [250 <./CT_SGAU/A_CT_SGAU_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7388--7389
 
  []
 
-<CT_SGAU/CT_SGAU_F.png, id=6290, 815.045pt x 517.935pt>
+<CT_SGAU/CT_SGAU_F.png, id=6305, 815.045pt x 517.935pt>
 File: CT_SGAU/CT_SGAU_F.png Graphic file (type png)
  <use CT_SGAU/CT_SGAU_F.png>
-Package pdftex.def Info: CT_SGAU/CT_SGAU_F.png used on input line 7379.
+Package pdftex.def Info: CT_SGAU/CT_SGAU_F.png used on input line 7390.
 (pdftex.def)             Requested size: 460.93153pt x 292.91042pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7384--7385
+Underfull \hbox (badness 10000) in paragraph at lines 7395--7396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7386--7387
+Underfull \hbox (badness 10000) in paragraph at lines 7397--7398
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7410.
+(babel)             in language  on input line 7421.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7410.
+(babel)             in language  on input line 7421.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7410.
+(babel)             in language  on input line 7421.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7410.
-[250 <./CT_SGAU/CT_SGAU_F.png>]
+(babel)             in language  on input line 7421.
+[251 <./CT_SGAU/CT_SGAU_F.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7411.
+(babel)             in language  on input line 7422.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7411.
+(babel)             in language  on input line 7422.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7413--7414
+Underfull \hbox (badness 10000) in paragraph at lines 7424--7425
 
  []
 
-<C_269/A_C_269_result.png, id=6309, 882.29625pt x 249.93375pt>
+<C_269/A_C_269_result.png, id=6324, 882.29625pt x 249.93375pt>
 File: C_269/A_C_269_result.png Graphic file (type png)
  <use C_269/A_C_269_result.png>
-Package pdftex.def Info: C_269/A_C_269_result.png used on input line 7415.
+Package pdftex.def Info: C_269/A_C_269_result.png used on input line 7426.
 (pdftex.def)             Requested size: 486.54057pt x 137.82628pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7420.
+(babel)             in language  on input line 7431.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7420.
+(babel)             in language  on input line 7431.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7420.
+(babel)             in language  on input line 7431.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7420.
- [251 <./C_269/A_C_269_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7421--7422
+(babel)             in language  on input line 7431.
+ [252 <./C_269/A_C_269_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7432--7433
 
  []
 
-<C_269/C_269_A.png, id=6315, 874.26625pt x 759.83875pt>
+<C_269/C_269_A.png, id=6331, 874.26625pt x 759.83875pt>
 File: C_269/C_269_A.png Graphic file (type png)
  <use C_269/C_269_A.png>
-Package pdftex.def Info: C_269/C_269_A.png used on input line 7423.
+Package pdftex.def Info: C_269/C_269_A.png used on input line 7434.
 (pdftex.def)             Requested size: 460.93153pt x 400.60248pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7426.
+(babel)             in language  on input line 7437.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7426.
+(babel)             in language  on input line 7437.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7426.
+(babel)             in language  on input line 7437.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7426.
- [252 <./C_269/C_269_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7429--7430
+(babel)             in language  on input line 7437.
+ [253 <./C_269/C_269_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7440--7441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7431--7432
+Underfull \hbox (badness 10000) in paragraph at lines 7442--7443
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7477.
+(babel)             in language  on input line 7488.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7477.
+(babel)             in language  on input line 7488.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7477.
+(babel)             in language  on input line 7488.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7477.
-[253]
+(babel)             in language  on input line 7488.
+[254]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7478.
+(babel)             in language  on input line 7489.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7478.
+(babel)             in language  on input line 7489.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7480--7481
+Underfull \hbox (badness 10000) in paragraph at lines 7491--7492
 
  []
 
-<C_270/A_C_270_result.png, id=6361, 885.3075pt x 327.2225pt>
+<C_270/A_C_270_result.png, id=6377, 885.3075pt x 327.2225pt>
 File: C_270/A_C_270_result.png Graphic file (type png)
  <use C_270/A_C_270_result.png>
-Package pdftex.def Info: C_270/A_C_270_result.png used on input line 7482.
+Package pdftex.def Info: C_270/A_C_270_result.png used on input line 7493.
 (pdftex.def)             Requested size: 486.54057pt x 179.83311pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7487.
+(babel)             in language  on input line 7498.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7487.
+(babel)             in language  on input line 7498.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7487.
+(babel)             in language  on input line 7498.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7487.
- [254 <./C_270/A_C_270_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7488--7489
+(babel)             in language  on input line 7498.
+ [255 <./C_270/A_C_270_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7499--7500
 
  []
 
-<C_270/C_270_A.png, id=6367, 875.27pt x 460.72125pt>
+<C_270/C_270_A.png, id=6383, 875.27pt x 460.72125pt>
 File: C_270/C_270_A.png Graphic file (type png)
  <use C_270/C_270_A.png>
-Package pdftex.def Info: C_270/C_270_A.png used on input line 7490.
+Package pdftex.def Info: C_270/C_270_A.png used on input line 7501.
 (pdftex.def)             Requested size: 460.93153pt x 242.62746pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7495--7496
+Underfull \hbox (badness 10000) in paragraph at lines 7506--7507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7497--7498
+Underfull \hbox (badness 10000) in paragraph at lines 7508--7509
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7523.
+(babel)             in language  on input line 7534.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7523.
+(babel)             in language  on input line 7534.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7523.
+(babel)             in language  on input line 7534.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7523.
-[255 <./C_270/C_270_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7524--7525
+(babel)             in language  on input line 7534.
+[256 <./C_270/C_270_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7535--7536
 
  []
 
-<C_270/C_270_B.png, id=6397, 872.25874pt x 529.98pt>
+<C_270/C_270_B.png, id=6412, 872.25874pt x 529.98pt>
 File: C_270/C_270_B.png Graphic file (type png)
  <use C_270/C_270_B.png>
-Package pdftex.def Info: C_270/C_270_B.png used on input line 7526.
+Package pdftex.def Info: C_270/C_270_B.png used on input line 7537.
 (pdftex.def)             Requested size: 460.93153pt x 280.0551pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7531--7532
+Underfull \hbox (badness 10000) in paragraph at lines 7542--7543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7533--7534
+Underfull \hbox (badness 10000) in paragraph at lines 7544--7545
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7565.
+(babel)             in language  on input line 7576.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7565.
+(babel)             in language  on input line 7576.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7565.
+(babel)             in language  on input line 7576.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7565.
-[256 <./C_270/C_270_B.png>]
+(babel)             in language  on input line 7576.
+[257 <./C_270/C_270_B.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7566.
+(babel)             in language  on input line 7577.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7566.
+(babel)             in language  on input line 7577.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7569--7570
+Underfull \hbox (badness 10000) in paragraph at lines 7580--7581
 
  []
 
-<C_272/A_C_272_result.png, id=6425, 885.3075pt x 250.9375pt>
+<C_272/A_C_272_result.png, id=6440, 885.3075pt x 250.9375pt>
 File: C_272/A_C_272_result.png Graphic file (type png)
  <use C_272/A_C_272_result.png>
-Package pdftex.def Info: C_272/A_C_272_result.png used on input line 7571.
+Package pdftex.def Info: C_272/A_C_272_result.png used on input line 7582.
 (pdftex.def)             Requested size: 486.54057pt x 137.90883pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7576.
+(babel)             in language  on input line 7587.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7576.
+(babel)             in language  on input line 7587.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7576.
+(babel)             in language  on input line 7587.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7576.
- [257 <./C_272/A_C_272_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7577--7578
+(babel)             in language  on input line 7587.
+ [258 <./C_272/A_C_272_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7588--7589
 
  []
 
-<C_272/C_272_A.png, id=6431, 873.2625pt x 466.74374pt>
+<C_272/C_272_A.png, id=6447, 873.2625pt x 466.74374pt>
 File: C_272/C_272_A.png Graphic file (type png)
  <use C_272/C_272_A.png>
-Package pdftex.def Info: C_272/C_272_A.png used on input line 7579.
+Package pdftex.def Info: C_272/C_272_A.png used on input line 7590.
 (pdftex.def)             Requested size: 460.93153pt x 246.3617pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7584--7585
+Underfull \hbox (badness 10000) in paragraph at lines 7595--7596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7586--7587
-
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7607.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7607.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7607.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7607.
-[258 <./C_272/C_272_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7608--7609
-
- []
-
-<C_272/C_272_B1.png, id=6455, 875.27pt x 788.9475pt>
-File: C_272/C_272_B1.png Graphic file (type png)
- <use C_272/C_272_B1.png>
-Package pdftex.def Info: C_272/C_272_B1.png used on input line 7610.
-(pdftex.def)             Requested size: 460.93153pt x 415.47969pt.
- <C_272/C_272_B2.png, id=6456, 874.26625pt x 131.49126pt>
-File: C_272/C_272_B2.png Graphic file (type png)
- <use C_272/C_272_B2.png>
-Package pdftex.def Info: C_272/C_272_B2.png used on input line 7611.
-(pdftex.def)             Requested size: 460.93153pt x 69.32486pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7616--7617
+Underfull \hbox (badness 10000) in paragraph at lines 7597--7598
 
  []
 
@@ -5722,524 +5702,494 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 7618.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 7618.
-[259 <./C_272/C_272_B1.png> <./C_272/C_272_B2.png>]
+[259 <./C_272/C_272_A.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 7619--7620
 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7678.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7678.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7678.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7678.
-[260]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7679.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7679.
+<C_272/C_272_B1.png, id=6470, 875.27pt x 788.9475pt>
+File: C_272/C_272_B1.png Graphic file (type png)
+ <use C_272/C_272_B1.png>
+Package pdftex.def Info: C_272/C_272_B1.png used on input line 7621.
+(pdftex.def)             Requested size: 460.93153pt x 415.47969pt.
+ <C_272/C_272_B2.png, id=6471, 874.26625pt x 131.49126pt>
+File: C_272/C_272_B2.png Graphic file (type png)
+ <use C_272/C_272_B2.png>
+Package pdftex.def Info: C_272/C_272_B2.png used on input line 7622.
+(pdftex.def)             Requested size: 460.93153pt x 69.32486pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7681--7682
+Underfull \hbox (badness 10000) in paragraph at lines 7627--7628
 
  []
 
-<C_273/A_C_273_result.png, id=6516, 888.31876pt x 251.94125pt>
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7629.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7629.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7629.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7629.
+[260 <./C_272/C_272_B1.png> <./C_272/C_272_B2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7630--7631
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7689.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7689.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7689.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7689.
+[261]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 7690.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 7690.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7692--7693
+
+ []
+
+<C_273/A_C_273_result.png, id=6531, 888.31876pt x 251.94125pt>
 File: C_273/A_C_273_result.png Graphic file (type png)
  <use C_273/A_C_273_result.png>
-Package pdftex.def Info: C_273/A_C_273_result.png used on input line 7683.
+Package pdftex.def Info: C_273/A_C_273_result.png used on input line 7694.
 (pdftex.def)             Requested size: 486.54057pt x 137.98761pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7688.
+(babel)             in language  on input line 7699.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7688.
+(babel)             in language  on input line 7699.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7688.
+(babel)             in language  on input line 7699.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7688.
- [261 <./C_273/A_C_273_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7689--7690
+(babel)             in language  on input line 7699.
+ [262 <./C_273/A_C_273_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7700--7701
 
  []
 
-<C_273/C_273_A.png, id=6522, 875.27pt x 450.68375pt>
+<C_273/C_273_A.png, id=6537, 875.27pt x 450.68375pt>
 File: C_273/C_273_A.png Graphic file (type png)
  <use C_273/C_273_A.png>
-Package pdftex.def Info: C_273/C_273_A.png used on input line 7691.
+Package pdftex.def Info: C_273/C_273_A.png used on input line 7702.
 (pdftex.def)             Requested size: 460.93153pt x 237.34145pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7696--7697
+Underfull \hbox (badness 10000) in paragraph at lines 7707--7708
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7698--7699
+Underfull \hbox (badness 10000) in paragraph at lines 7709--7710
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7718.
+(babel)             in language  on input line 7729.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7718.
+(babel)             in language  on input line 7729.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7718.
+(babel)             in language  on input line 7729.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7718.
-[262 <./C_273/C_273_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7719--7720
+(babel)             in language  on input line 7729.
+[263 <./C_273/C_273_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7730--7731
 
  []
 
-<C_273/C_273_B.png, id=6544, 875.27pt x 387.4475pt>
+<C_273/C_273_B.png, id=6559, 875.27pt x 387.4475pt>
 File: C_273/C_273_B.png Graphic file (type png)
  <use C_273/C_273_B.png>
-Package pdftex.def Info: C_273/C_273_B.png used on input line 7721.
+Package pdftex.def Info: C_273/C_273_B.png used on input line 7732.
 (pdftex.def)             Requested size: 460.93153pt x 204.03964pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7726--7727
+Underfull \hbox (badness 10000) in paragraph at lines 7737--7738
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7728--7729
+Underfull \hbox (badness 10000) in paragraph at lines 7739--7740
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7768.
+(babel)             in language  on input line 7779.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7768.
+(babel)             in language  on input line 7779.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7768.
+(babel)             in language  on input line 7779.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7768.
-[263 <./C_273/C_273_B.png>]
+(babel)             in language  on input line 7779.
+[264 <./C_273/C_273_B.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7769.
+(babel)             in language  on input line 7780.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7769.
+(babel)             in language  on input line 7780.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7771--7772
+Underfull \hbox (badness 10000) in paragraph at lines 7782--7783
 
  []
 
-<C_274/A_C_274_result.png, id=6578, 886.31125pt x 251.94125pt>
+<C_274/A_C_274_result.png, id=6595, 886.31125pt x 251.94125pt>
 File: C_274/A_C_274_result.png Graphic file (type png)
  <use C_274/A_C_274_result.png>
-Package pdftex.def Info: C_274/A_C_274_result.png used on input line 7773.
+Package pdftex.def Info: C_274/A_C_274_result.png used on input line 7784.
 (pdftex.def)             Requested size: 486.54057pt x 138.30669pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7778.
+(babel)             in language  on input line 7789.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7778.
+(babel)             in language  on input line 7789.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7778.
+(babel)             in language  on input line 7789.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7778.
- [264 <./C_274/A_C_274_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7779--7780
+(babel)             in language  on input line 7789.
+ [265 <./C_274/A_C_274_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7790--7791
 
  []
 
-<C_274/C_274_A.png, id=6585, 874.26625pt x 603.25375pt>
+<C_274/C_274_A.png, id=6601, 874.26625pt x 603.25375pt>
 File: C_274/C_274_A.png Graphic file (type png)
  <use C_274/C_274_A.png>
-Package pdftex.def Info: C_274/C_274_A.png used on input line 7781.
+Package pdftex.def Info: C_274/C_274_A.png used on input line 7792.
 (pdftex.def)             Requested size: 460.93153pt x 318.04767pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7786--7787
+Underfull \hbox (badness 10000) in paragraph at lines 7797--7798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7788--7789
+Underfull \hbox (badness 10000) in paragraph at lines 7799--7800
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7811.
+(babel)             in language  on input line 7822.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7811.
+(babel)             in language  on input line 7822.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7811.
+(babel)             in language  on input line 7822.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7811.
-[265 <./C_274/C_274_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7812--7813
+(babel)             in language  on input line 7822.
+[266 <./C_274/C_274_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7823--7824
 
  []
 
-<C_274/C_274_B.png, id=6611, 873.2625pt x 745.78625pt>
+<C_274/C_274_B.png, id=6626, 873.2625pt x 745.78625pt>
 File: C_274/C_274_B.png Graphic file (type png)
  <use C_274/C_274_B.png>
-Package pdftex.def Info: C_274/C_274_B.png used on input line 7814.
+Package pdftex.def Info: C_274/C_274_B.png used on input line 7825.
 (pdftex.def)             Requested size: 460.93153pt x 393.64891pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7819--7820
+Underfull \hbox (badness 10000) in paragraph at lines 7830--7831
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7821--7822
+Underfull \hbox (badness 10000) in paragraph at lines 7832--7833
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7838.
+(babel)             in language  on input line 7849.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7838.
+(babel)             in language  on input line 7849.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7838.
+(babel)             in language  on input line 7849.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7838.
-[266 <./C_274/C_274_B.png>]
+(babel)             in language  on input line 7849.
+[267 <./C_274/C_274_B.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7897.
+(babel)             in language  on input line 7908.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7897.
+(babel)             in language  on input line 7908.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7897.
+(babel)             in language  on input line 7908.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7897.
- [267]
-Underfull \hbox (badness 10000) in paragraph at lines 7898--7899
+(babel)             in language  on input line 7908.
+ [268]
+Underfull \hbox (badness 10000) in paragraph at lines 7909--7910
 
  []
 
-<C_274/C_274_C.png, id=6694, 874.26625pt x 615.29875pt>
+<C_274/C_274_C.png, id=6710, 874.26625pt x 615.29875pt>
 File: C_274/C_274_C.png Graphic file (type png)
  <use C_274/C_274_C.png>
-Package pdftex.def Info: C_274/C_274_C.png used on input line 7900.
+Package pdftex.def Info: C_274/C_274_C.png used on input line 7911.
 (pdftex.def)             Requested size: 460.93153pt x 324.39804pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7903.
+(babel)             in language  on input line 7914.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7903.
+(babel)             in language  on input line 7914.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7903.
+(babel)             in language  on input line 7914.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7903.
- [268 <./C_274/C_274_C.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7906--7907
+(babel)             in language  on input line 7914.
+ [269 <./C_274/C_274_C.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7917--7918
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7908--7909
+Underfull \hbox (badness 10000) in paragraph at lines 7919--7920
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7951.
+(babel)             in language  on input line 7962.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7951.
+(babel)             in language  on input line 7962.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7951.
+(babel)             in language  on input line 7962.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7951.
-[269]
+(babel)             in language  on input line 7962.
+[270]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7952.
+(babel)             in language  on input line 7963.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7952.
+(babel)             in language  on input line 7963.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7954--7955
+Underfull \hbox (badness 10000) in paragraph at lines 7965--7966
 
  []
 
-<C_275/A_C_275_result.png, id=6736, 888.31876pt x 252.945pt>
+<C_275/A_C_275_result.png, id=6752, 888.31876pt x 252.945pt>
 File: C_275/A_C_275_result.png Graphic file (type png)
  <use C_275/A_C_275_result.png>
-Package pdftex.def Info: C_275/A_C_275_result.png used on input line 7956.
+Package pdftex.def Info: C_275/A_C_275_result.png used on input line 7967.
 (pdftex.def)             Requested size: 486.54057pt x 138.53737pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7961.
+(babel)             in language  on input line 7972.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7961.
+(babel)             in language  on input line 7972.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 7961.
+(babel)             in language  on input line 7972.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 7961.
- [270 <./C_275/A_C_275_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7962--7963
+(babel)             in language  on input line 7972.
+ [271 <./C_275/A_C_275_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 7973--7974
 
  []
 
-<C_275/C_275_C.png, id=6743, 875.27pt x 352.31625pt>
+<C_275/C_275_C.png, id=6758, 875.27pt x 352.31625pt>
 File: C_275/C_275_C.png Graphic file (type png)
  <use C_275/C_275_C.png>
-Package pdftex.def Info: C_275/C_275_C.png used on input line 7964.
+Package pdftex.def Info: C_275/C_275_C.png used on input line 7975.
 (pdftex.def)             Requested size: 460.93153pt x 185.53864pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7969--7970
+Underfull \hbox (badness 10000) in paragraph at lines 7980--7981
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7971--7972
+Underfull \hbox (badness 10000) in paragraph at lines 7982--7983
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8005.
+(babel)             in language  on input line 8016.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8005.
+(babel)             in language  on input line 8016.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8005.
+(babel)             in language  on input line 8016.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8005.
-[271 <./C_275/C_275_C.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8006--8007
+(babel)             in language  on input line 8016.
+[272 <./C_275/C_275_C.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8017--8018
 
  []
 
 File: C_275/C_275_C.png Graphic file (type png)
 <use C_275/C_275_C.png>
-Package pdftex.def Info: C_275/C_275_C.png used on input line 8008.
+Package pdftex.def Info: C_275/C_275_C.png used on input line 8019.
 (pdftex.def)             Requested size: 460.93153pt x 185.53864pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8013--8014
+Underfull \hbox (badness 10000) in paragraph at lines 8024--8025
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8015--8016
+Underfull \hbox (badness 10000) in paragraph at lines 8026--8027
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8048.
+(babel)             in language  on input line 8059.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8048.
+(babel)             in language  on input line 8059.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8048.
+(babel)             in language  on input line 8059.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8048.
-[272]
+(babel)             in language  on input line 8059.
+[273]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8049.
+(babel)             in language  on input line 8060.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8049.
+(babel)             in language  on input line 8060.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8051--8052
+Underfull \hbox (badness 10000) in paragraph at lines 8062--8063
 
  []
 
-<C_276/A_C_276_result.png, id=6806, 886.31125pt x 251.94125pt>
+<C_276/A_C_276_result.png, id=6822, 886.31125pt x 251.94125pt>
 File: C_276/A_C_276_result.png Graphic file (type png)
  <use C_276/A_C_276_result.png>
-Package pdftex.def Info: C_276/A_C_276_result.png used on input line 8053.
+Package pdftex.def Info: C_276/A_C_276_result.png used on input line 8064.
 (pdftex.def)             Requested size: 486.54057pt x 138.30669pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8058.
+(babel)             in language  on input line 8069.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8058.
+(babel)             in language  on input line 8069.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8058.
+(babel)             in language  on input line 8069.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8058.
- [273 <./C_276/A_C_276_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8059--8060
+(babel)             in language  on input line 8069.
+ [274 <./C_276/A_C_276_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8070--8071
 
  []
 
-<C_276/C_276_A.png, id=6813, 873.2625pt x 541.02126pt>
+<C_276/C_276_A.png, id=6828, 873.2625pt x 541.02126pt>
 File: C_276/C_276_A.png Graphic file (type png)
  <use C_276/C_276_A.png>
-Package pdftex.def Info: C_276/C_276_A.png used on input line 8061.
+Package pdftex.def Info: C_276/C_276_A.png used on input line 8072.
 (pdftex.def)             Requested size: 460.93153pt x 285.56764pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8064.
+(babel)             in language  on input line 8075.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8064.
+(babel)             in language  on input line 8075.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8064.
+(babel)             in language  on input line 8075.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8064.
- [274 <./C_276/C_276_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8067--8068
+(babel)             in language  on input line 8075.
+ [275 <./C_276/C_276_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8078--8079
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8069--8070
+Underfull \hbox (badness 10000) in paragraph at lines 8080--8081
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8113.
+(babel)             in language  on input line 8124.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8113.
+(babel)             in language  on input line 8124.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8113.
+(babel)             in language  on input line 8124.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8113.
-[275]
-Underfull \hbox (badness 10000) in paragraph at lines 8114--8115
+(babel)             in language  on input line 8124.
+[276]
+Underfull \hbox (badness 10000) in paragraph at lines 8125--8126
 
  []
 
-<C_276/C_276_B.png, id=6863, 874.26625pt x 652.4375pt>
+<C_276/C_276_B.png, id=6879, 874.26625pt x 652.4375pt>
 File: C_276/C_276_B.png Graphic file (type png)
  <use C_276/C_276_B.png>
-Package pdftex.def Info: C_276/C_276_B.png used on input line 8116.
+Package pdftex.def Info: C_276/C_276_B.png used on input line 8127.
 (pdftex.def)             Requested size: 460.93153pt x 343.97835pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8119.
+(babel)             in language  on input line 8130.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8119.
+(babel)             in language  on input line 8130.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8119.
+(babel)             in language  on input line 8130.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8119.
- [276 <./C_276/C_276_B.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8122--8123
+(babel)             in language  on input line 8130.
+ [277 <./C_276/C_276_B.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8133--8134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8124--8125
+Underfull \hbox (badness 10000) in paragraph at lines 8135--8136
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8164.
+(babel)             in language  on input line 8175.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8164.
+(babel)             in language  on input line 8175.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8164.
+(babel)             in language  on input line 8175.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8164.
-[277]
-Underfull \hbox (badness 10000) in paragraph at lines 8165--8166
+(babel)             in language  on input line 8175.
+[278]
+Underfull \hbox (badness 10000) in paragraph at lines 8176--8177
 
  []
 
-<C_276/C_276_C.png, id=6910, 873.2625pt x 442.65375pt>
+<C_276/C_276_C.png, id=6926, 873.2625pt x 442.65375pt>
 File: C_276/C_276_C.png Graphic file (type png)
  <use C_276/C_276_C.png>
-Package pdftex.def Info: C_276/C_276_C.png used on input line 8167.
+Package pdftex.def Info: C_276/C_276_C.png used on input line 8178.
 (pdftex.def)             Requested size: 460.93153pt x 233.64624pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8172--8173
+Underfull \hbox (badness 10000) in paragraph at lines 8183--8184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8174--8175
+Underfull \hbox (badness 10000) in paragraph at lines 8185--8186
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8212.
+(babel)             in language  on input line 8223.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8212.
+(babel)             in language  on input line 8223.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8212.
+(babel)             in language  on input line 8223.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8212.
-[278 <./C_276/C_276_C.png>]
+(babel)             in language  on input line 8223.
+[279 <./C_276/C_276_C.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8213.
+(babel)             in language  on input line 8224.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8213.
+(babel)             in language  on input line 8224.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8215--8216
+Underfull \hbox (badness 10000) in paragraph at lines 8226--8227
+
+ []
+
+<C_277/A_C_277_result.png, id=6959, 886.31125pt x 253.94875pt>
+File: C_277/A_C_277_result.png Graphic file (type png)
+ <use C_277/A_C_277_result.png>
+Package pdftex.def Info: C_277/A_C_277_result.png used on input line 8228.
+(pdftex.def)             Requested size: 486.54057pt x 139.40874pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8233.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8233.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8233.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8233.
+ [280 <./C_277/A_C_277_result.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8234--8235
+
+ []
+
+<C_277/C_277_A.png, id=6965, 886.31125pt x 253.94875pt>
+File: C_277/C_277_A.png Graphic file (type png)
+ <use C_277/C_277_A.png>
+Package pdftex.def Info: C_277/C_277_A.png used on input line 8236.
+(pdftex.def)             Requested size: 460.93153pt x 132.0696pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8241--8242
 
  []
 
 
-LaTeX Warning: File `C_277/A_C_277_result.png' not found on input line 8217.
-
-
-./main.tex:8217: Package pdftex.def Error: File `C_277/A_C_277_result.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8217 ....95\textwidth]{C_277/A_C_277_result.png}
-                                                  \\ [1cm]
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 8217.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8222.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8222.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8222.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8222.
- [279]
-Underfull \hbox (badness 10000) in paragraph at lines 8223--8224
+Underfull \hbox (badness 10000) in paragraph at lines 8243--8244
 
  []
 
-
-LaTeX Warning: File `C_277/C_277_A.png' not found on input line 8225.
-
-
-./main.tex:8225: Package pdftex.def Error: File `C_277/C_277_A.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8225 ...[width=0.9\textwidth]{C_277/C_277_A.png}
-                                                  \\ [1cm]
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8230--8231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8232--8233
-
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8244.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8244.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8244.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8244.
-[280]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8252.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8252.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8252.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8252.
- [281]
-Underfull \hbox (badness 10000) in paragraph at lines 8253--8254
-
- []
-
-<C_277/C_277_B1.png, id=6975, 876.27374pt x 675.52374pt>
-File: C_277/C_277_B1.png Graphic file (type png)
- <use C_277/C_277_B1.png>
-Package pdftex.def Info: C_277/C_277_B1.png used on input line 8255.
-(pdftex.def)             Requested size: 460.93153pt x 355.33559pt.
- <C_277/C_277_B2.png, id=6976, 872.25874pt x 356.33125pt>
-File: C_277/C_277_B2.png Graphic file (type png)
- <use C_277/C_277_B2.png>
-Package pdftex.def Info: C_277/C_277_B2.png used on input line 8256.
-(pdftex.def)             Requested size: 460.93153pt x 188.29462pt.
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 8263.
 Package babel Info: Redefining russian shorthand "~
@@ -6248,509 +6198,537 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 8263.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 8263.
- [282 <./C_277/C_277_B1.png> <./C_277/C_277_B2.png>]
+[281 <./C_277/C_277_A.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 8264--8265
 
  []
 
+<C_277/C_277_B1.png, id=6987, 876.27374pt x 675.52374pt>
+File: C_277/C_277_B1.png Graphic file (type png)
+ <use C_277/C_277_B1.png>
+Package pdftex.def Info: C_277/C_277_B1.png used on input line 8266.
+(pdftex.def)             Requested size: 460.93153pt x 355.33559pt.
+ <C_277/C_277_B2.png, id=6988, 872.25874pt x 356.33125pt>
+File: C_277/C_277_B2.png Graphic file (type png)
+ <use C_277/C_277_B2.png>
+Package pdftex.def Info: C_277/C_277_B2.png used on input line 8267.
+(pdftex.def)             Requested size: 460.93153pt x 188.29462pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8325.
+(babel)             in language  on input line 8274.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8325.
+(babel)             in language  on input line 8274.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8325.
+(babel)             in language  on input line 8274.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8325.
+(babel)             in language  on input line 8274.
+ [282 <./C_277/C_277_B1.png> <./C_277/C_277_B2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8275--8276
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8336.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8336.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8336.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8336.
 [283]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8395.
+(babel)             in language  on input line 8406.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8395.
+(babel)             in language  on input line 8406.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8395.
+(babel)             in language  on input line 8406.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8395.
+(babel)             in language  on input line 8406.
  [284]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8396.
+(babel)             in language  on input line 8407.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8396.
+(babel)             in language  on input line 8407.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8398--8399
+Underfull \hbox (badness 10000) in paragraph at lines 8409--8410
 
  []
 
-<C_277_5/A_C_277_5_result.png, id=7109, 884.30376pt x 289.08pt>
+<C_277_5/A_C_277_5_result.png, id=7121, 884.30376pt x 289.08pt>
 File: C_277_5/A_C_277_5_result.png Graphic file (type png)
  <use C_277_5/A_C_277_5_result.png>
-Package pdftex.def Info: C_277_5/A_C_277_5_result.png used on input line 8400.
+Package pdftex.def Info: C_277_5/A_C_277_5_result.png used on input line 8411.
 (pdftex.def)             Requested size: 486.54057pt x 159.05182pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8405.
+(babel)             in language  on input line 8416.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8405.
+(babel)             in language  on input line 8416.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8405.
+(babel)             in language  on input line 8416.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8405.
+(babel)             in language  on input line 8416.
  [285 <./C_277_5/A_C_277_5_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8406--8407
+Underfull \hbox (badness 10000) in paragraph at lines 8417--8418
 
  []
 
-<C_277_5/C_277_5_A.png, id=7115, 874.26625pt x 825.0825pt>
+<C_277_5/C_277_5_A.png, id=7127, 874.26625pt x 825.0825pt>
 File: C_277_5/C_277_5_A.png Graphic file (type png)
  <use C_277_5/C_277_5_A.png>
-Package pdftex.def Info: C_277_5/C_277_5_A.png used on input line 8408.
+Package pdftex.def Info: C_277_5/C_277_5_A.png used on input line 8419.
 (pdftex.def)             Requested size: 460.93153pt x 435.00032pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8411.
+(babel)             in language  on input line 8422.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8411.
+(babel)             in language  on input line 8422.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8411.
+(babel)             in language  on input line 8422.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8411.
+(babel)             in language  on input line 8422.
  [286 <./C_277_5/C_277_5_A.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8414--8415
+Underfull \hbox (badness 10000) in paragraph at lines 8425--8426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8416--8417
+Underfull \hbox (badness 10000) in paragraph at lines 8427--8428
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8451.
+(babel)             in language  on input line 8462.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8451.
+(babel)             in language  on input line 8462.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8451.
+(babel)             in language  on input line 8462.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8451.
+(babel)             in language  on input line 8462.
 [287]
-Underfull \hbox (badness 10000) in paragraph at lines 8452--8453
-
- []
-
-<C_277_5/C_277_5_B1.png, id=7157, 875.27pt x 706.64pt>
-File: C_277_5/C_277_5_B1.png Graphic file (type png)
- <use C_277_5/C_277_5_B1.png>
-Package pdftex.def Info: C_277_5/C_277_5_B1.png used on input line 8454.
-(pdftex.def)             Requested size: 460.93153pt x 372.13449pt.
- <C_277_5/C_277_5_B2.png, id=7158, 872.25874pt x 161.60374pt>
-File: C_277_5/C_277_5_B2.png Graphic file (type png)
- <use C_277_5/C_277_5_B2.png>
-Package pdftex.def Info: C_277_5/C_277_5_B2.png used on input line 8455.
-(pdftex.def)             Requested size: 460.93153pt x 85.39558pt.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8458.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8458.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8458.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8458.
- [288 <./C_277_5/C_277_5_B1.png> <./C_277_5/C_277_5_B2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8461--8462
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 8463--8464
 
  []
 
+<C_277_5/C_277_5_B1.png, id=7169, 875.27pt x 706.64pt>
+File: C_277_5/C_277_5_B1.png Graphic file (type png)
+ <use C_277_5/C_277_5_B1.png>
+Package pdftex.def Info: C_277_5/C_277_5_B1.png used on input line 8465.
+(pdftex.def)             Requested size: 460.93153pt x 372.13449pt.
+ <C_277_5/C_277_5_B2.png, id=7170, 872.25874pt x 161.60374pt>
+File: C_277_5/C_277_5_B2.png Graphic file (type png)
+ <use C_277_5/C_277_5_B2.png>
+Package pdftex.def Info: C_277_5/C_277_5_B2.png used on input line 8466.
+(pdftex.def)             Requested size: 460.93153pt x 85.39558pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8507.
+(babel)             in language  on input line 8469.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8507.
+(babel)             in language  on input line 8469.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8507.
+(babel)             in language  on input line 8469.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8507.
-[289]
-Underfull \hbox (badness 10000) in paragraph at lines 8508--8509
+(babel)             in language  on input line 8469.
+ [288 <./C_277_5/C_277_5_B1.png> <./C_277_5/C_277_5_B2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8472--8473
 
  []
 
-<C_277_5/C_277_5_C.png, id=7209, 873.2625pt x 488.82625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 8474--8475
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8518.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8518.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8518.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8518.
+[289]
+Underfull \hbox (badness 10000) in paragraph at lines 8519--8520
+
+ []
+
+<C_277_5/C_277_5_C.png, id=7221, 873.2625pt x 488.82625pt>
 File: C_277_5/C_277_5_C.png Graphic file (type png)
  <use C_277_5/C_277_5_C.png>
-Package pdftex.def Info: C_277_5/C_277_5_C.png used on input line 8510.
+Package pdftex.def Info: C_277_5/C_277_5_C.png used on input line 8521.
 (pdftex.def)             Requested size: 460.93153pt x 258.0175pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8515--8516
+Underfull \hbox (badness 10000) in paragraph at lines 8526--8527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8517--8518
+Underfull \hbox (badness 10000) in paragraph at lines 8528--8529
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8546.
+(babel)             in language  on input line 8557.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8546.
+(babel)             in language  on input line 8557.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8546.
+(babel)             in language  on input line 8557.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8546.
+(babel)             in language  on input line 8557.
 [290 <./C_277_5/C_277_5_C.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8573.
+(babel)             in language  on input line 8584.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8573.
+(babel)             in language  on input line 8584.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8573.
+(babel)             in language  on input line 8584.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8573.
+(babel)             in language  on input line 8584.
  [291]
-Underfull \hbox (badness 10000) in paragraph at lines 8574--8575
+Underfull \hbox (badness 10000) in paragraph at lines 8585--8586
 
  []
 
-<C_277_5/C_277_5_D1.png, id=7272, 874.26625pt x 687.56876pt>
+<C_277_5/C_277_5_D1.png, id=7284, 874.26625pt x 687.56876pt>
 File: C_277_5/C_277_5_D1.png Graphic file (type png)
  <use C_277_5/C_277_5_D1.png>
-Package pdftex.def Info: C_277_5/C_277_5_D1.png used on input line 8576.
+Package pdftex.def Info: C_277_5/C_277_5_D1.png used on input line 8587.
 (pdftex.def)             Requested size: 460.93153pt x 362.50026pt.
- <C_277_5/C_277_5_D2.png, id=7273, 872.25874pt x 496.85625pt>
+ <C_277_5/C_277_5_D2.png, id=7285, 872.25874pt x 496.85625pt>
 File: C_277_5/C_277_5_D2.png Graphic file (type png)
  <use C_277_5/C_277_5_D2.png>
-Package pdftex.def Info: C_277_5/C_277_5_D2.png used on input line 8577.
+Package pdftex.def Info: C_277_5/C_277_5_D2.png used on input line 8588.
 (pdftex.def)             Requested size: 460.93153pt x 262.55167pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8582--8583
+Underfull \hbox (badness 10000) in paragraph at lines 8593--8594
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8584.
+(babel)             in language  on input line 8595.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8584.
+(babel)             in language  on input line 8595.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8584.
+(babel)             in language  on input line 8595.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8584.
+(babel)             in language  on input line 8595.
 [292 <./C_277_5/C_277_5_D1.png> <./C_277_5/C_277_5_D2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8584--8585
+Underfull \hbox (badness 10000) in paragraph at lines 8595--8596
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8646.
+(babel)             in language  on input line 8657.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8646.
+(babel)             in language  on input line 8657.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8646.
+(babel)             in language  on input line 8657.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8646.
+(babel)             in language  on input line 8657.
 [293]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8647.
+(babel)             in language  on input line 8658.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8647.
+(babel)             in language  on input line 8658.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8649--8650
+Underfull \hbox (badness 10000) in paragraph at lines 8660--8661
 
  []
 
-<VK_Qual_2/A_VK_Qual_result.png, id=7333, 886.31125pt x 212.795pt>
+<VK_Qual_2/A_VK_Qual_result.png, id=7345, 886.31125pt x 212.795pt>
 File: VK_Qual_2/A_VK_Qual_result.png Graphic file (type png)
  <use VK_Qual_2/A_VK_Qual_result.png>
-Package pdftex.def Info: VK_Qual_2/A_VK_Qual_result.png used on input line 8651.
+Package pdftex.def Info: VK_Qual_2/A_VK_Qual_result.png used on input line 8662.
 (pdftex.def)             Requested size: 486.54057pt x 116.8168pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8656.
+(babel)             in language  on input line 8667.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8656.
+(babel)             in language  on input line 8667.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8656.
+(babel)             in language  on input line 8667.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8656.
+(babel)             in language  on input line 8667.
  [294 <./VK_Qual_2/A_VK_Qual_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8657--8658
+Underfull \hbox (badness 10000) in paragraph at lines 8668--8669
 
  []
 
-<VK_Qual_2/VK_Qual_A1.png, id=7340, 876.27374pt x 624.3325pt>
+<VK_Qual_2/VK_Qual_A1.png, id=7353, 876.27374pt x 624.3325pt>
 File: VK_Qual_2/VK_Qual_A1.png Graphic file (type png)
  <use VK_Qual_2/VK_Qual_A1.png>
-Package pdftex.def Info: VK_Qual_2/VK_Qual_A1.png used on input line 8659.
+Package pdftex.def Info: VK_Qual_2/VK_Qual_A1.png used on input line 8670.
 (pdftex.def)             Requested size: 460.93153pt x 328.40822pt.
- <VK_Qual_2/VK_Qual_A2.png, id=7341, 873.2625pt x 668.4975pt>
+ <VK_Qual_2/VK_Qual_A2.png, id=7354, 873.2625pt x 668.4975pt>
 File: VK_Qual_2/VK_Qual_A2.png Graphic file (type png)
  <use VK_Qual_2/VK_Qual_A2.png>
-Package pdftex.def Info: VK_Qual_2/VK_Qual_A2.png used on input line 8660.
+Package pdftex.def Info: VK_Qual_2/VK_Qual_A2.png used on input line 8671.
 (pdftex.def)             Requested size: 460.93153pt x 352.85352pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8665.
+(babel)             in language  on input line 8676.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8665.
+(babel)             in language  on input line 8676.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8665.
+(babel)             in language  on input line 8676.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8665.
+(babel)             in language  on input line 8676.
  [295 <./VK_Qual_2/VK_Qual_A1.png> <./VK_Qual_2/VK_Qual_A2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8665--8666
+Underfull \hbox (badness 10000) in paragraph at lines 8676--8677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8667--8668
+Underfull \hbox (badness 10000) in paragraph at lines 8678--8679
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8709.
+(babel)             in language  on input line 8720.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8709.
+(babel)             in language  on input line 8720.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8709.
+(babel)             in language  on input line 8720.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8709.
+(babel)             in language  on input line 8720.
 [296]
-Underfull \hbox (badness 10000) in paragraph at lines 8710--8711
+Underfull \hbox (badness 10000) in paragraph at lines 8721--8722
 
  []
 
-<VK_Qual_2/VK_Qual_C.png, id=7391, 874.26625pt x 643.40375pt>
+<VK_Qual_2/VK_Qual_C.png, id=7403, 874.26625pt x 643.40375pt>
 File: VK_Qual_2/VK_Qual_C.png Graphic file (type png)
  <use VK_Qual_2/VK_Qual_C.png>
-Package pdftex.def Info: VK_Qual_2/VK_Qual_C.png used on input line 8712.
+Package pdftex.def Info: VK_Qual_2/VK_Qual_C.png used on input line 8723.
 (pdftex.def)             Requested size: 460.93153pt x 339.21556pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8717--8718
+Underfull \hbox (badness 10000) in paragraph at lines 8728--8729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8719--8720
+Underfull \hbox (badness 10000) in paragraph at lines 8730--8731
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8743.
+(babel)             in language  on input line 8754.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8743.
+(babel)             in language  on input line 8754.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8743.
+(babel)             in language  on input line 8754.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8743.
+(babel)             in language  on input line 8754.
 [297 <./VK_Qual_2/VK_Qual_C.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8784.
+(babel)             in language  on input line 8795.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8784.
+(babel)             in language  on input line 8795.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8784.
+(babel)             in language  on input line 8795.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8784.
+(babel)             in language  on input line 8795.
  [298]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8785.
+(babel)             in language  on input line 8796.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8785.
+(babel)             in language  on input line 8796.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8787--8788
+Underfull \hbox (badness 10000) in paragraph at lines 8798--8799
 
  []
 
-<VK_R_1/A_VK_1_result.png, id=7456, 884.30376pt x 292.09125pt>
+<VK_R_1/A_VK_1_result.png, id=7469, 884.30376pt x 292.09125pt>
 File: VK_R_1/A_VK_1_result.png Graphic file (type png)
  <use VK_R_1/A_VK_1_result.png>
-Package pdftex.def Info: VK_R_1/A_VK_1_result.png used on input line 8789.
+Package pdftex.def Info: VK_R_1/A_VK_1_result.png used on input line 8800.
 (pdftex.def)             Requested size: 486.54057pt x 160.7086pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8794.
+(babel)             in language  on input line 8805.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8794.
+(babel)             in language  on input line 8805.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8794.
+(babel)             in language  on input line 8805.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8794.
+(babel)             in language  on input line 8805.
  [299 <./VK_R_1/A_VK_1_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8795--8796
-
- []
-
-<VK_R_1/VK_1_A1.png, id=7463, 876.27374pt x 743.77875pt>
-File: VK_R_1/VK_1_A1.png Graphic file (type png)
- <use VK_R_1/VK_1_A1.png>
-Package pdftex.def Info: VK_R_1/VK_1_A1.png used on input line 8797.
-(pdftex.def)             Requested size: 460.93153pt x 391.23874pt.
- <VK_R_1/VK_1_A2.png, id=7464, 871.255pt x 232.87pt>
-File: VK_R_1/VK_1_A2.png Graphic file (type png)
- <use VK_R_1/VK_1_A2.png>
-Package pdftex.def Info: VK_R_1/VK_1_A2.png used on input line 8798.
-(pdftex.def)             Requested size: 460.93153pt x 123.19664pt.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8801.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8801.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8801.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8801.
- [300 <./VK_R_1/VK_1_A1.png> <./VK_R_1/VK_1_A2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8804--8805
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 8806--8807
 
  []
 
+<VK_R_1/VK_1_A1.png, id=7475, 876.27374pt x 743.77875pt>
+File: VK_R_1/VK_1_A1.png Graphic file (type png)
+ <use VK_R_1/VK_1_A1.png>
+Package pdftex.def Info: VK_R_1/VK_1_A1.png used on input line 8808.
+(pdftex.def)             Requested size: 460.93153pt x 391.23874pt.
+ <VK_R_1/VK_1_A2.png, id=7476, 871.255pt x 232.87pt>
+File: VK_R_1/VK_1_A2.png Graphic file (type png)
+ <use VK_R_1/VK_1_A2.png>
+Package pdftex.def Info: VK_R_1/VK_1_A2.png used on input line 8809.
+(pdftex.def)             Requested size: 460.93153pt x 123.19664pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8862.
+(babel)             in language  on input line 8812.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8862.
+(babel)             in language  on input line 8812.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8862.
+(babel)             in language  on input line 8812.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8862.
+(babel)             in language  on input line 8812.
+ [300 <./VK_R_1/VK_1_A1.png> <./VK_R_1/VK_1_A2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8815--8816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8817--8818
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8873.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8873.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8873.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8873.
 [301]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8897.
+(babel)             in language  on input line 8908.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8897.
+(babel)             in language  on input line 8908.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8897.
+(babel)             in language  on input line 8908.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8897.
+(babel)             in language  on input line 8908.
  [302]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8898.
+(babel)             in language  on input line 8909.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8898.
+(babel)             in language  on input line 8909.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8900--8901
+Underfull \hbox (badness 10000) in paragraph at lines 8911--8912
 
  []
 
-<VK_1/A_VK_1_result.png, id=7559, 886.31125pt x 404.51125pt>
+<VK_1/A_VK_1_result.png, id=7572, 886.31125pt x 404.51125pt>
 File: VK_1/A_VK_1_result.png Graphic file (type png)
  <use VK_1/A_VK_1_result.png>
-Package pdftex.def Info: VK_1/A_VK_1_result.png used on input line 8902.
+Package pdftex.def Info: VK_1/A_VK_1_result.png used on input line 8913.
 (pdftex.def)             Requested size: 486.54057pt x 222.06215pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8907.
+(babel)             in language  on input line 8918.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8907.
+(babel)             in language  on input line 8918.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8907.
+(babel)             in language  on input line 8918.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8907.
+(babel)             in language  on input line 8918.
  [303 <./VK_1/A_VK_1_result.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 8908--8909
+Underfull \hbox (badness 10000) in paragraph at lines 8919--8920
 
  []
 
+<VK_1/VK_1_A.png, id=7578, 875.27pt x 316.18124pt>
 File: VK_1/VK_1_A.png Graphic file (type png)
-<use VK_1/VK_1_A.png>
-Package pdftex.def Info: VK_1/VK_1_A.png used on input line 8910.
+ <use VK_1/VK_1_A.png>
+Package pdftex.def Info: VK_1/VK_1_A.png used on input line 8921.
 (pdftex.def)             Requested size: 460.93153pt x 166.50903pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8915--8916
+Underfull \hbox (badness 10000) in paragraph at lines 8926--8927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8917--8918
+Underfull \hbox (badness 10000) in paragraph at lines 8928--8929
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8932.
+(babel)             in language  on input line 8943.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8932.
+(babel)             in language  on input line 8943.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8932.
+(babel)             in language  on input line 8943.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8932.
-[304]
-Underfull \hbox (badness 10000) in paragraph at lines 8934--8935
+(babel)             in language  on input line 8943.
+[304 <./VK_1/VK_1_A.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 8945--8946
 
  []
 
-<VK_1/VK_1_B.png, id=7583, 872.25874pt x 524.96124pt>
+<VK_1/VK_1_B.png, id=7596, 872.25874pt x 524.96124pt>
 File: VK_1/VK_1_B.png Graphic file (type png)
  <use VK_1/VK_1_B.png>
-Package pdftex.def Info: VK_1/VK_1_B.png used on input line 8936.
+Package pdftex.def Info: VK_1/VK_1_B.png used on input line 8947.
 (pdftex.def)             Requested size: 460.93153pt x 277.40308pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8941--8942
+Underfull \hbox (badness 10000) in paragraph at lines 8952--8953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8943--8944
+Underfull \hbox (badness 10000) in paragraph at lines 8954--8955
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8962.
+(babel)             in language  on input line 8973.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8962.
+(babel)             in language  on input line 8973.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8962.
+(babel)             in language  on input line 8973.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8962.
+(babel)             in language  on input line 8973.
 [305 <./VK_1/VK_1_B.png>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8963.
+(babel)             in language  on input line 8974.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8963.
+(babel)             in language  on input line 8974.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8965--8966
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8967--8968
+Underfull \hbox (badness 10000) in paragraph at lines 8976--8977
 
  []
 
-<Vekua_personal/A_Vekua_personal_result.png, id=7597, 866.23625pt x 36.135pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 8978--8979
+
+ []
+
+<Vekua_personal/A_Vekua_personal_result.png, id=7610, 866.23625pt x 36.135pt>
 File: Vekua_personal/A_Vekua_personal_result.png Graphic file (type png)
  <use Vekua_personal/A_Vekua_personal_result.png>
-Package pdftex.def Info: Vekua_personal/A_Vekua_personal_result.png used on input line 8969.
+Package pdftex.def Info: Vekua_personal/A_Vekua_personal_result.png used on input line 8980.
 (pdftex.def)             Requested size: 486.54057pt x 20.2961pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8977.
+(babel)             in language  on input line 8988.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8977.
+(babel)             in language  on input line 8988.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 8977.
+(babel)             in language  on input line 8988.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 8977.
+(babel)             in language  on input line 8988.
  [306 <./Vekua_personal/A_Vekua_personal_result.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8977.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8977.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8988.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8988.
  (/Users/makarov/Documents/University/Contests-Report-2/.texpadtmp/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8977.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8977.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8988.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8988.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8977.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8988.
  ) 
 Here is how much of TeX's memory you used:
- 32174 strings out of 493089
- 534238 string characters out of 6134843
+ 32184 strings out of 493089
+ 534072 string characters out of 6134843
  791852 words of memory out of 5000000
- 29086 multiletter control sequences out of 15000+600000
- 22392 words of font info for 61 fonts, out of 8000000 for 9000
+ 29091 multiletter control sequences out of 15000+600000
+ 22082 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,94p,1233b,1986s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on /Users/makarov/Documents/University/Contests-Report-2/.texpadtmp/main.pdf (307 pages, 17017502 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb>
+Output written on /Users/makarov/Documents/University/Contests-Report-2/.texpadtmp/main.pdf (307 pages, 17139908 bytes).
 PDF statistics:
- 8883 PDF objects out of 8907 (max. 8388607)
- 8213 compressed objects within 83 object streams
- 5959 named destinations out of 6186 (max. 500000)
- 1501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8894 PDF objects out of 8907 (max. 8388607)
+ 8220 compressed objects within 83 object streams
+ 5968 named destinations out of 6186 (max. 500000)
+ 1516 words of extra memory for PDF output out of 10000 (max. 10000000)
 

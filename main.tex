@@ -7012,57 +7012,68 @@ int main() {
 
 %----------------------------------------------------------------------------------------
 %
-%	VK Cup Раунд 1
+%	Codeforces 103
 %
 %----------------------------------------------------------------------------------------
 
 \newpage
-\subsection{ VK Cup 2015 - Уайлд-кард раунд 1}
+\subsection{Codeforces Round 103 Div 2}
 
 \textbf{{\large Результаты}} \\
 \begin{center}
-\includegraphics[width=0.95\textwidth]{VK_1/VK_1_result.png}\\ [1cm]
+\includegraphics[width=0.95\textwidth]{C_103/result.png}\\ [1cm]
 \end{center}
 
-\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/530}}}
+\textbf{{\large Ссылка на контест: \url{http://codeforces.com/contest/144}}}
 
 \newpage
-\textbf{{\large Задача A - Квадратное уравнение}}
+\textbf{{\large Задача A - Приезд генерала}}
 
 \begin{center}
-\includegraphics[width=0.9\textwidth]{VK_1/VK_1_A.png}\\ [1cm]
+\includegraphics[width=0.9\textwidth]{C_103/A.png}\\ [1cm]
 \end{center}
 
 \textbf{{\large Алгоритм}}
 
-Сложность этой задачи состоит в том, что написать ее нужно на эзотерическом языке $Picat$.\\
+Для решения этой задачи нужно найти самого высокого и самого низкого солдата, а затем посчитать количество обменов для того чтобы поставить их в начало и конец. Сложность $O(1)$.\\
+
+\newpage
 
 \textbf{{\large Исходный код}} \\
-\begin{lstlisting}[language=C]
- main =>
-  A = read_int(),
-  B = read_int(),
-  C = read_int(),
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <climits>
 
-  D = (B * B) - (4 * A * C),
+using namespace std;
 
-  X1 = ((-1)* B + sqrt(D)) / (2 *A ),
-
-  X2 = ((-1)* B - sqrt(D)) / (2 * A),
-
-
-  if(X1 < X2) then
-      println(X1),
-      println(X2)
-      end,
-
-  if(X1 > X2) then
-      println(X2),
-      println(X1)
-      end,
-  if(X1 == X2) then
-      println(X2)
-      end.
+int main() {
+    int n, h;
+    cin >> n;
+    int fh = INT_MIN;
+    int fi = n;
+    int lh = INT_MAX;
+    int li = -1;
+    for (int i = 0; i < n; i++) {
+        cin >> h;
+        if (h > fh) {
+            fh = h;
+            fi = i;
+        } else if (h == fh && i < fi) {
+            fi = i;
+        }
+        if (h < lh) {
+            lh = h;
+            li = i;
+        } else if (h == lh && i > li) {
+            li = i;
+        }
+    }
+    int ans = fi + n - li - 1;
+    if (fi > li) {
+        ans--;
+    }
+    cout << ans << endl;
+}
 \end{lstlisting}
 
 
