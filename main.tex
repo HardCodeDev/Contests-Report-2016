@@ -2419,6 +2419,1412 @@ end
 
 
 
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup Grand Prix of Asia
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup Grand Prix of Asia (3 solved)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Asia/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10329}}}
+
+\newpage
+\textbf{{\large Задача E - Mirror Rice Cake}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Asia/E.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Сортируем и складываем все числа до тех пор, пока общая сумма не станет больше следующего слагаемого. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Java]
+import java.util.*;
+public class Test {
+    public static void main(String[] args) {        
+      Scanner sc = new Scanner(System.in);
+      int N = sc.nextInt();      
+      long a[] = new long[N];      
+      for(int i = 0; i < N; i++) {
+          a[i] = sc.nextInt();
+      }
+      int count = 1;
+      Arrays.sort(a);
+      long sum = a[0];
+      for(int i = 1; i < N; i++) {
+          if(a[i] > sum) {
+              count++;
+              sum += a[i];
+          }
+      }
+      System.out.println(count);      
+    }
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача L - String Modifcation}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Asia/L.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+#!/usr/bin/env ruby
+a = gets.chomp
+b = gets.chomp
+i = 0
+j = 0
+f = false
+fc = b[0]
+while j < b.length do
+  if fc != b[j]
+    f = true
+  end
+  if i < a.length && a[i] == b[j]
+    i += 1
+    j += 1
+  elsif i == 0
+    puts 'No'
+    exit
+  else
+    if b[j-1] == b[j] && !f
+      puts 'No'
+      exit
+    end
+    j += 1
+  end
+end
+if i == a.length
+  puts 'Yes'
+else
+  puts 'No'
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача N - Soccer Match}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Asia/N.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Перебор всех возможных варинтов с использованием формул. Сложность $O(n)$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+input = gets.split(' ').map(&:to_i)
+games = input.first
+score = input.last
+wins = score / 3
+ties = 0
+losses = 0
+while wins > games
+    wins = wins - 1
+end
+while wins > -1
+    ties = score - wins * 3
+    losses = games - wins - ties
+    break if ties < 0 or losses < 0
+    puts "#{wins} #{ties} #{losses}"
+    wins = wins - 1
+end
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of Saratov
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of Saratov (3 solved)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Saratov/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{hhttp://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10340}}}
+
+\newpage
+\textbf{{\large Задача A - Алфавит}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Saratov/A.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Группируем все слова по первой букве с помощью ассоциативного массива и затем выводим в отсортированном виде. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.chomp.to_i
+h = {}
+for i in 0...n
+  word = gets.chomp
+  c = word[0]
+  unless h.has_key?(c)
+    h[c] = []
+  end
+  h[c].push(word)
+end
+puts h.size
+for a in h.keys.sort
+  puts h[a].sort.join(' ')
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача D - Возрастающие последовательности}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Saratov/D.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается простым перебором. Сложность $O(n)$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cmath>
+#include <set>
+#include <string>
+#define LL long long
+#define ULL  unsigned long long
+using namespace std;
+ULL myAbs(ULL a, ULL b) {
+	if(a > b) {
+		return a - b;
+	} else {
+		return b - a + 1;
+	}
+}
+typedef struct {
+	int first;
+	int second;
+	int d;
+} dist;
+
+bool comp(const dist &a, const dist &b) {
+    return a.d > b.d;
+}
+int main() {
+
+	int temp;
+	
+	int N, M;
+	cin >> N >> M;
+
+	vector <int> up(N, 0);
+	int cur, prev;
+	cin >> prev;
+	int k = 0;
+
+	for(int i = 1; i < N; i++) {
+		cin >> cur;
+		if(cur > prev) {
+			up[i] = k;
+		}
+		else {
+			k++;
+			up[i] = k;
+		}
+		prev = cur;
+	}
+
+	int l, r;
+	for(int i = 0; i < M; i++) {
+		cin >> l >> r;
+		if(up[l-1] == up[r-1] && l != r) {
+			cout << "Y";
+		}
+		else {
+			cout << "N";
+		}
+	}
+
+	//cin >> temp;
+	
+	return 0;
+
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача E - Карточки}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Saratov/E.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается с помощью перебора. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <set>
+using namespace std;
+
+int main() {
+  long n;
+  cin >> n;
+  vector<long> a(n);
+  for (long i = 0; i < n; ++i) {
+    long d;
+    cin >> d;
+    a[i] = d;
+  }
+  sort(a.begin(), a.end());
+  set<long> h;
+  long max_s = 1;
+  for (long i = 0; i < n; ++i) {
+    long j = n-1;
+    while (j > i) {
+      if (j-i <= 2 * max_s)
+        break;
+      long sum = a[i] + a[j];
+      if (h.find(sum) != h.end()) {
+        j -= 1;
+        continue;
+      }
+      else {
+        h.insert(sum);
+      }
+      long count = 1;
+      long y = j-1;
+      for (long k = i+1; k <= y; ++k) {
+        bool f = false;
+        long x = y;
+        while (!f && x > k) {
+          long sum_k = a[k] + a[x];
+          if (sum_k == sum) {
+            count += 1;
+            y = x - 1;
+            f = true;
+          }
+          else if (sum_k < sum) {
+            break;
+          }
+          x -= 1;
+        }
+      }
+      if (count > max_s) {
+        max_s = count;
+      }
+      j -= 1;
+    }
+  }
+  cout << max_s << '\n';
+  return 0;
+}
+
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of China
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of China (4 solved)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_China_2016/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10341}}}
+
+\newpage
+\textbf{{\large Задача L - Cut The Rectangle}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_China_2016/L.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Для решения задачи нужно просто проверить равенство треуголника. Сложность $O(1))$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+a = gets.split(' ').map(&:to_i)
+b = gets.split(' ').map(&:to_i)
+as = a.sort.join('')
+bs = b.sort.join('')
+if (a[0]**2 + a[1]**2 == a[2]**2 ||
+  a[0]**2 + a[2]**2 == a[1]**2 ||
+  a[2]**2 + a[1]**2 == a[0]**2 &&
+  as == bs)
+  puts 1
+else
+  puts 0
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача M - Diversity}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_China_2016/M.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Нужно удалять из слова буквы, которых меньше всего, до тех пор, пока различных букв не станет 1 или 2 штуки. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+aa = gets.chomp
+h = {}
+count = 0
+for i in 0...a.size
+  if h.has_key?(a[i])
+    h[a[i]] += 1
+  else
+    h[a[i]] = 1
+    count += 1
+  end
+end
+if count <= 2
+  puts 0
+else
+  m = h.values.sort
+  sum = 0
+  n = m.size - 2
+  for i in 0...n
+    sum += m[i]
+  end
+  puts sum
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача N - Mechanics}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_China_2016/N_1.png}\\
+\includegraphics[width=0.9\textwidth]{OC_China_2016/N_2.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. Нужно учитывать, что если соединения колёс от первого к последним образуют дерево, то колёса могут крутиться, и направление у колёс чередуется. Также, для подсчёта частоты вращения требуется сокращать дробь на каждом шаге.  \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <queue>
+using namespace std;
+#define ll long long
+#define ull unsigned long long
+#define eps 0.0000000001
+struct Gear {
+  ll x, y, r;
+  bool f;
+  char sign;
+  ll a, b;
+  vector<ll> list;
+  ll parent;
+  Gear(ll a, ll b, ll c) {
+    x = a;
+    y = b;
+    r = c;
+    f = 0;
+  }
+};
+
+double eq_eps(double a, double b) {
+  return fabs(a - b) < eps;
+}
+
+int main() {
+  ll n;
+  cin >> n;
+  vector<Gear *> v(n);
+  for (int i = 0; i < n; ++i) {
+    ll a, b, c;
+    cin >> a >> b >> c;
+    v[i] = new Gear(a, b, c);
+  }
+  for (int i = 0; i < n; ++i) {
+    for (int j = i+1; j < n; ++j) {
+      bool res = eq_eps(sqrt(pow(v[i]->x - v[j]->x, 2) + pow(v[i]->y - v[j]->y, 2)), v[i]->r + v[j]->r);
+      if (res) {
+        v[i]->list.push_back(j);
+        v[j]->list.push_back(i);
+      }
+
+    }
+  }
+  ll x = 0;
+  v[x]->a = 1;
+  v[x]->b = 1;
+  v[x]->sign = 1;
+  queue<ll> qu;
+  qu.push(x);
+  while (!qu.empty()) {
+    x = qu.front();
+    qu.pop();
+    Gear * cur_gear = v[x];
+    for (ll i = 0; i < cur_gear->list.size(); ++i) {
+      if (cur_gear->list[i] == cur_gear->parent)
+        continue;
+      Gear * next_gear = v[cur_gear->list[i]];
+      if (!next_gear->f) {
+        qu.push(cur_gear->list[i]);
+        next_gear->f = 1;
+        next_gear->parent = x;
+      }
+      else {
+        cout << -1 << endl;
+        return 0;
+      }
+      next_gear->sign = cur_gear->sign * -1;
+      ll new_a, new_b, a, b;
+      a = new_a = cur_gear->r * cur_gear->a;
+      b = new_b = next_gear->r * cur_gear->b;
+      while (b != 0) {
+          ll r = a%b;
+          a = b; b = r;
+      }
+      next_gear->a = new_a/a;
+      next_gear->b = new_b/a;
+    }
+  }
+  Gear * last_gear = v[n-1];
+  if (last_gear->f == 0) {
+    cout << 0 << endl;
+    return 0;
+  }
+  ll a = last_gear->a;
+  ll b = last_gear->b;
+  while (b != 0) {
+      ll r = a%b;
+      a = b; b = r;
+  }
+  cout << last_gear->b/a << ' ' << last_gear->sign * last_gear->a/a << endl;
+
+  return 0;
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача O - Pairs}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_China_2016/O.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+typedef struct {
+    long suit;
+    long cost;
+    int id;
+} Card;
+bool cmp_suit(const Card &a, const Card &b)
+{
+    return a.suit < b.suit;
+}
+bool cmp_cost(const Card &a, const Card &b)
+{
+    return a.cost < b.cost;
+}
+int main()
+{
+    int n;
+    cin >> n;
+    vector<Card> hand(n);
+    for (int i = 0; i < n; i++) {
+        cin >> hand[i].suit >> hand[i].cost;
+        hand[i].id = i + 1;
+    }
+    stable_sort(hand.begin(), hand.end(), cmp_cost);
+    stable_sort(hand.begin(), hand.end(), cmp_suit);
+    vector< pair<int, int> > output;
+    vector< vector<int> > jazz;
+    for (int i = 1; i <= n; i++) {
+        vector<int> temp;
+        temp.push_back(hand[i - 1].id);
+        while (i < n && hand[i].suit == hand[i - 1].suit) {
+            temp.push_back(hand[i].id);
+            i++;
+        }
+        jazz.push_back(temp);
+    }
+    for (size_t i = 0; i < jazz.size(); i++) {
+        if (jazz[i].size() < 2) {
+            cout << "-1" << endl;
+            return 0;
+        } else {
+            output.push_back(make_pair(jazz[i][0], jazz[i][1]));
+        }
+    }
+    cout << output.size() << endl;
+    for (size_t i = 0; i < output.size(); i++) {
+        cout << output[i].first << " " << output[i].second << endl;
+    }
+    return 0;
+}
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of Bashkortostan
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of Bashkortostan (7 solved)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Bashkortostan/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10342}}}
+
+\newpage
+\textbf{{\large Задача C - Constant Ratio}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/C.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается перебором. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    long x;
+    scanf("%ld", &x); 
+    long count = 0; 
+    long d;
+    for (d = 1; d < x; d++) {
+        if (x % d == 0) {
+            count++;
+        }
+    } 
+    long b1, q, n;
+    for (b1 = 1; b1 <= (x/3 + 1); b1++)
+    {
+        long q_max = ceil((double)x / b1) - 1;     
+        for (q = 2; q <= q_max; q++)
+        {
+            for (n = 2; n <= 100000; n++)
+            {
+                long s = (b1 * ((long)pow((double)q, (double)n) - 1)) / (q - 1);
+                if (s == x) {
+                    count++;
+                } else if (s > x) {
+                    break;
+                }
+            }
+        }
+    }   
+    printf("%ld\n", count);  
+    return 0;
+}
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача L - Игра со строкой}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/L.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается с помощью конечного автомата, полученного при исследовании поведения строки при различных входных данных. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+counter = 0
+state = 'a'
+a = n
+while a > 1
+  if state == 'a'
+    if a&1 == 1
+      state = 'c'
+    else
+      state = 'b'
+    end
+    counter += (a.to_f / 2.0).ceil
+  elsif state == 'b'
+    d = a / 2
+    counter += d
+    a -= d
+    state = 'a'
+  else
+    state = 'a'
+    d = (a.to_f / 2.0).ceil
+    counter += d
+    a += d
+  end
+end
+puts counter
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача N - Numbers}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/N.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+t = gets.to_i
+
+t.times do
+    inp = gets.split(' ').map(&:to_i)
+
+    n = inp.first
+    x = inp.last
+
+    first_class = true
+    if n % 4 == 0 or (n + 1) % 4 == 0
+        first_class = false
+    end
+
+    nums = []
+
+    if first_class
+        #nums = (1..n).step(2).to_a
+        if !x.even? and x <= n
+            puts 'YES'
+        else
+            puts 'NO'
+        end
+    else
+        #nums = (0..n).step(2).to_a
+        if x.even? and x <= n
+            puts 'YES'
+        else
+            puts 'NO'
+        end
+    end
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача O - Ones as the Difference}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/O.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Генерируем все варианты ответов с помощью перебора и вставляем в код конечной программы. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+Генератор:
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+
+if n < 10
+    puts n
+else
+    count = 9
+    num = 10
+    while true
+        good_num = true
+        num_as_str = num.to_s
+        for i in 1...(num_as_str.size)
+            digit_l = num_as_str[i - 1].to_i
+            digit_r = num_as_str[i].to_i
+            if (digit_r - digit_l).abs != 1
+                good_num = false
+                break
+            end
+        end
+        if good_num
+            count = count + 1
+            print "#{num},"
+        end
+        if count == n
+            puts num
+            break
+        end
+        num = num + 1
+    end
+end
+\end{lstlisting}
+Программа с предподсчитанными числами:
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+answer = [1,2,3,4,5,...generated_numbers...,2123456,2123456]
+puts answer[n - 1]
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача P - Places at the Olympics}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/P.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+t = gets.to_i
+
+t.times do
+    medals = gets.split(' ').map(&:to_i)
+    temp = medals.each_slice(3).to_a
+    berland = temp.first
+    byteland = temp.last
+    # test Win
+    berland_count = berland.inject(:+)
+    byteland_count = byteland.inject(:+)
+    count_win = false
+    if (berland_count > byteland_count)
+        count_win = true
+    end
+    # test Quality
+    quality_win = false
+    if berland[0] > byteland[0]
+        quality_win = true
+    elsif berland[0] == byteland[0] and
+          berland[1] > byteland[1]
+          quality_win = true
+    elsif berland[0] == byteland[0] and
+          berland[1] == byteland[1] and
+          berland[2] > byteland[2]
+          quality_win = true
+    end
+    if count_win and quality_win
+        puts "Win"
+    elsif count_win
+        puts "Count"
+    elsif quality_win
+        puts "Quality"
+    else
+        puts "None"
+    end
+end
+\end{lstlisting}
+
+
+
+\newpage
+\textbf{{\large Задача Q - Quaqua the Frog}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/Q.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Сложность $O(n^2)$. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Java]
+import java.util.*;
+public class Test {
+    public static void main(String[] args) {        
+      Scanner sc = new Scanner(System.in);
+      int T = sc.nextInt();
+      int c;
+      int j;
+      String s;      
+      for(int i = 0; i < T; i++) {
+          c = sc.nextInt();
+          j = sc.nextInt();          
+          char arr[];
+          sc.nextLine();
+          s = sc.nextLine();
+          arr = s.toCharArray();
+          boolean frogCan = false;
+          int count = 0;
+          int cur = 0;
+          while(true) {
+            if(cur + j + 1 < c - 1) {
+                if(arr[cur+j + 1] == '.') {
+                    cur += j + 1;
+                    count++;
+                    frogCan = true;
+                } else {
+                    for(int jTemp = j - 1; jTemp >= 0; jTemp--) {
+                        if(arr[cur + jTemp + 1] == '.') {
+                            cur += jTemp + 1;
+                            count++;
+                            frogCan = true;
+                            break;
+                        }
+                    }
+                }
+                if(!frogCan) {
+                    break;
+                }
+                frogCan = false;
+            } else {
+                count++;
+                frogCan = true;
+                break;
+            }
+        }
+        if(!frogCan) {
+             System.out.println("-1");
+        } else {
+             System.out.println(count);
+        }           
+      }    
+    }
+}
+\end{lstlisting}
+
+
+
+\newpage
+\textbf{{\large Задача R - Road in Mountains}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Bashkortostan/R.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. Сложность $O(n)$. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Java]
+import java.util.*;
+public class Test {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int N = sc.nextInt();
+      double temp;
+      double S = 0;
+      double t = 0;      
+      double arr[][] = new double[N][2];
+      for(int i = 0; i < N; i++) {
+          temp = sc.nextDouble();
+          arr[i][0] = temp;
+          S += arr[i][0];    
+          temp = sc.nextDouble();
+          arr[i][1] = temp;
+          t += arr[i][0] / arr[i][1];
+      }
+      System.out.println(S/t);
+    }
+}
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of Tatarstan
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of Tatarstan (solved 2)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Tatarstan_2016/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10344}}}
+
+\newpage
+\textbf{{\large Задача G - Кастрюли}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Tatarstan_2016/G.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Подсчитываем количество каждого вида кастрюль и выбираем наибольшее. Сложность $O(n)$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+data = gets.split(' ').map(&:to_i)
+
+h = Hash.new
+data.each do |item|
+    el = h[item]
+    if el == nil
+        h[item] = 1
+    else
+        h[item] = el + 1
+    end
+end
+
+top = 0
+h.each_value do |val|
+    if val > top
+        top = val
+    end
+end
+puts top
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача M - Наименьшая дробь}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Tatarstan_2016/M.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается с помощью итеративного вычисления наибольшого общего делителя и наименьшого общего множителя. Сложность $O(n)$. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Java]
+import java.util.Scanner;
+public class OpenCup {
+    public static long gcd (long a, long b) {
+	if (b == 0)
+		return a;
+	else
+		return gcd (b, a % b);
+    }
+    public static long lcm (long a, long b) {
+	return a / gcd (a, b) * b;
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        long[] a = new long[n];
+        long[] b = new long[n];
+        for(int i = 0; i < n; i++) {
+            a[i] = in.nextLong();
+            b[i] = in.nextLong();            
+        }
+        long A = a[0], B = b[0];
+        for(int i = 0; i < n - 1; i++) {
+            b[i + 1] = gcd(b[i], b[i + 1]);
+            a[i + 1] = lcm(a[i], a[i + 1]);
+        }
+        A = a[n - 1];
+        B = b[n - 1];
+        long t = gcd(A, B);
+        A = A / t;
+        B = B / t;
+        System.out.println(A + " " + B);
+    }
+}
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of Baltics
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of Baltics (solved 3)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Baltics/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10344}}}
+
+\newpage
+\textbf{{\large Задача E - Поиск уникального элемента}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Baltics/E.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается с помощью бинарного поиска. Сложность $O(log_2(n))$. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n = gets.to_i
+if n == 1
+    puts "? 1"
+    STDOUT.flush
+    puts "! #{gets}"
+    STDOUT.flush
+    exit
+end
+idx1 = 1
+idx2 = 2
+l = 1
+r = n
+a = 0
+b = 0
+while true
+    idx1 = (l + r) / 2
+    if idx1.even?
+        idx1 = idx1 - 1
+    end
+    idx2 = idx1 + 1
+    if idx2 > n or l == r
+        puts "? #{idx1}"
+        STDOUT.flush
+        a = gets.to_i
+        puts "! #{a}"
+        STDOUT.flush
+        exit
+    end
+    puts "? #{idx1}"
+    STDOUT.flush
+    a = gets.to_i
+    puts "? #{idx2}"
+    STDOUT.flush
+    b = gets.to_i
+    if a != b
+        r = idx1
+    else
+        l = idx2 + 1
+    end
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача G - Перевёрнутая цепная дробь}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Baltics/G.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача на реализацию. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+n, d = gets.split(' ').map(&:to_i)
+if n == 1
+    puts "#{n} #{d}"
+    exit
+end
+nn = n
+dd = d
+arr = []
+while true
+    nn, dd = dd, nn
+    val = nn / dd
+    arr.push(val)
+    nn = nn - dd * val
+    if nn == 1
+        arr.push(dd)
+        break
+    end
+end
+nn = 1
+dd = arr.first
+for i in (1...arr.size)
+    nn = arr[i] * dd + nn
+    nn, dd = dd, nn
+end
+puts "#{nn} #{dd}"
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача J - Нарисуй прямой обход}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Baltics/J.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Восстанавливаем структуру двоичного дерева и затем просто обходим дерево слева направо в порядке возрастания чисел и при этом в выводе отражаем глубину дерева. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+struct Tree{
+  long val;
+  Tree *left;
+  Tree *right;
+  int depth;
+  Tree () {
+    val = -1;
+  }
+};
+
+struct Line_part {
+  long val;
+  bool isVal;
+  Line_part(long a, bool b) {
+    val = a;
+    isVal = b;
+  }
+};
+void tree_add(Tree *nd, long val, int depth) {
+  if (nd->val == -1) {
+    nd->val = val;
+    nd->left = new Tree();
+    nd->right = new Tree();
+    nd->depth = depth;
+  }
+  else if (nd->val > val) {
+    tree_add(nd->left, val, nd->depth + 1);
+  }
+  else {
+    tree_add(nd->right, val, nd->depth + 1);
+  }
+}
+
+struct Line {
+  int length;
+  vector<Line_part> parts;
+  Line() {
+    length = 0;
+  }
+};
+vector<Line> rect;
+long n = 0;
+void tree_print (Tree *nd) {
+  if (nd->val == -1)
+    return;
+  tree_print(nd->left);
+  int c = 1;
+  long t = nd->val;
+  while (t >= 10) {
+    t /= 10;
+    ++c;
+  }
+  if (rect.size() <= nd->depth) {
+    rect.resize((nd->depth + 1) * 2, Line());
+  }
+  Line *line = &rect[nd->depth];
+  line->parts.push_back(Line_part(n - line->length, false));
+  line->parts.push_back(Line_part(nd->val, true));
+  line->length += c + n - line->length;
+  n += c;
+  tree_print(nd->right);
+}
+
+int main() {
+  long d;
+  Tree *root = new Tree();
+  while (1) {
+    cin >> d;
+    tree_add(root, d, 0);
+    if (cin.get() != ' ')
+      break;
+  }
+  tree_print(root);
+  for (int i = 0; i < rect.size(); ++i) {
+    Line *line = &rect[i];
+    if (line->length == 0)
+      break;
+    for (int j = 0; j < line->parts.size(); ++j) {
+      if (line->parts[j].isVal) {
+        cout << line->parts[j].val;
+      }
+      else {
+        for (int k = 0; k < line->parts[j].val; ++k)
+          cout << ' ';
+      }
+    }
+    cout << endl;
+  }
+  return 0;
+}
+\end{lstlisting}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	OpenCup GrandPrix of Moscow
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenCup GrandPrix of Moscow (solved 2)}
+
+\textbf{{\large Результаты}} \\
+\begin{center}
+\includegraphics[width=0.95\textwidth]{OC_Moscow/result.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Ссылка на контест: \url{http://opentrains.snarknews.info/~ejudge/team.cgi?contest_id=10345}}}
+
+\newpage
+\textbf{{\large Задача N - Notebooks}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Moscow/N.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается перебором. Сложность $O(n^2)$. \\
+\newpage
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Ruby]
+t = gets.to_i
+t.times do
+    n = gets.to_i
+    data = Array.new(n)
+    for i in 0...n
+        data[i] = gets.split(' ').map(&:to_f)
+    end
+    d = Array.new(10)
+    for i in 0...n
+        d[i] = 1;
+        for j in 0...i
+            if data[j].first < data[i].first and data[j].last > data[i].last
+                d[i] = [d[i], 1 + d[j]].max
+            end
+        end
+    end
+    ans = d[0]
+    for i in 0...n
+        ans = [ans, d[i]].max
+    end
+    puts ans
+end
+\end{lstlisting}
+
+
+\newpage
+\textbf{{\large Задача P - Convex Polyhedron}}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{OC_Moscow/P.png}\\ [1cm]
+\end{center}
+
+\textbf{{\large Алгоритм}}
+
+Задача решается по формуле $x = 2 - V + E$. Сложность $O(1)$. \\
+
+\textbf{{\large Исходный код}} \\
+\begin{lstlisting}[language=Java]
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+public class C {    
+    public static void main(String[] args) {        
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for(int i = 0; i < T; i++) {
+            int V = sc.nextInt();
+            int E = sc.nextInt();            
+            System.out.println(2 - V + E);
+        }
+    }
+}
+\end{lstlisting}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%
+%	Vekua Cup 2016
+%
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{Vekua Cup 2016}
+
+Так как соревнование проводилось в МФТИ, то турнирная таблица с результатами и исходные коды программ не доступны. \\
+
+
+
+
 %----------------------------------------------------------------------------------------
 %
 %	Codeforces ACM Южный четвертьфинал
