@@ -1414,12 +1414,7 @@ int main(int argc, const char * argv[])
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C]
 #include <iostream>
-#include <set>
-#include <vector>
 using namespace std;
-#define ll long long
-#define ull unsigned long long
-
 int main() {
 	ull n;
 	cin >> n;
@@ -1470,9 +1465,7 @@ int main() {
 					break;
 				}
 			}
-			if (f) {
-				break;
-			}
+			if (f) { break; }
 		}
 	}
 	return 0;
@@ -1491,6 +1484,7 @@ int main() {
 
 Для решения этой задачи нам нужно знать префиксную сумму по времени на отрезке. Мы можем вычислить вручную несколько первых значений, по которым потом сможешь получить любое значение, так как все они высчитываются на основе предыдущих. Сложность алгоритма $O(N)$. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
 n = gets.to_i
@@ -1629,6 +1623,7 @@ print $n - 2*$rn;
 
 Если $N = M$, то ответ 6. Иначе ответ равен 3 умноженной на 2 в степени разницы между $N$ и $M$. Сложность $O(1)$. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C++]
 #include <iostream>
@@ -1667,8 +1662,6 @@ int main() {
 		}
 		cout << answ << endl;
 	}
-
-	//cin >> temp;
 	
 	return 0;
 
@@ -1691,42 +1684,27 @@ int main() {
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C++]
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <climits>
-
 using namespace std;
-
 int main(int argc, const char * argv[]) {
-    
     int n;
     cin >> n;
-    
     vector<int> gtu(n);
     vector<int> tsu(n);
-    
     int val;
-    
     for (int i = 0; i < n; i++) {
         cin >> val;
         gtu[i] = val;
     }
-    
     for (int i = 0; i < n; i++) {
         cin >> val;
         tsu[i] = val;
     }
-    
     sort(gtu.begin(), gtu.end(), greater<int>());
     sort(tsu.begin(), tsu.end(), greater<int>());
-    
     int gtu_score = 0;
     int tsu_score = 0;
-    
     vector<int> tsu_search = tsu;
-    
     int next_start_pos = 0;
-    
     for (int i = 0; i < n; i++) {
         bool found = false;
         for (int j = next_start_pos; j < n; j++) {
@@ -1742,9 +1720,7 @@ int main(int argc, const char * argv[]) {
             break;
         }
     }
-    
     next_start_pos = 0;
-    
     for (int i = 0; i < n; i++) {
         bool found = false;
         for (int j = next_start_pos; j < n; j++) {
@@ -1760,9 +1736,7 @@ int main(int argc, const char * argv[]) {
             break;
         }
     }
-    
     cout << gtu_score << " " << tsu_score << endl;
-    
     return 0;
 }
 
@@ -2203,6 +2177,7 @@ puts func(a,b)
 
 Задача на реализацию. Необходимо найти классы эквивалентности. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
 n = gets.to_i
@@ -2367,10 +2342,9 @@ end
 \textbf{{\large Алгоритм}}
 
 Сортируем и складываем все числа до тех пор, пока общая сумма не станет больше следующего слагаемого. \\
-\newpage
+
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Java]
-import java.util.*;
 public class Test {
     public static void main(String[] args) {        
       Scanner sc = new Scanner(System.in);
@@ -2389,8 +2363,7 @@ public class Test {
           }
       }
       System.out.println(count);      
-    }
-}
+    } }
 \end{lstlisting}
 
 
@@ -2404,30 +2377,23 @@ public class Test {
 \textbf{{\large Алгоритм}}
 
 Задача на реализацию. \\
-\newpage
+
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
-#!/usr/bin/env ruby
-a = gets.chomp
-b = gets.chomp
-i = 0
-j = 0
+a = gets.chomp; b = gets.chomp
+i = 0; j = 0
 f = false
 fc = b[0]
 while j < b.length do
-  if fc != b[j]
-    f = true
-  end
+  f = true if fc != b[j]
   if i < a.length && a[i] == b[j]
     i += 1
     j += 1
   elsif i == 0
-    puts 'No'
-    exit
+    puts 'No'; exit
   else
     if b[j-1] == b[j] && !f
-      puts 'No'
-      exit
+      puts 'No'; exit
     end
     j += 1
   end
@@ -2532,16 +2498,10 @@ end
 
 Задача решается простым перебором. Сложность $O(n)$. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C++]
 #include <iostream>
-#include <algorithm>
-#include <vector>
-#include <cmath>
-#include <set>
-#include <string>
-#define LL long long
-#define ULL  unsigned long long
 using namespace std;
 ULL myAbs(ULL a, ULL b) {
 	if(a > b) {
@@ -2555,22 +2515,17 @@ typedef struct {
 	int second;
 	int d;
 } dist;
-
 bool comp(const dist &a, const dist &b) {
     return a.d > b.d;
 }
 int main() {
-
 	int temp;
-	
 	int N, M;
 	cin >> N >> M;
-
 	vector <int> up(N, 0);
 	int cur, prev;
 	cin >> prev;
 	int k = 0;
-
 	for(int i = 1; i < N; i++) {
 		cin >> cur;
 		if(cur > prev) {
@@ -2582,7 +2537,6 @@ int main() {
 		}
 		prev = cur;
 	}
-
 	int l, r;
 	for(int i = 0; i < M; i++) {
 		cin >> l >> r;
@@ -2593,11 +2547,7 @@ int main() {
 			cout << "N";
 		}
 	}
-
-	//cin >> temp;
-	
 	return 0;
-
 }
 \end{lstlisting}
 
@@ -2778,7 +2728,6 @@ end
 \begin{lstlisting}[language=C++]
 #include <iostream>
 #include <vector>
-#include <cmath>
 #include <queue>
 using namespace std;
 #define ll long long
@@ -2798,11 +2747,9 @@ struct Gear {
     f = 0;
   }
 };
-
 double eq_eps(double a, double b) {
   return fabs(a - b) < eps;
 }
-
 int main() {
   ll n;
   cin >> n;
@@ -2869,7 +2816,6 @@ int main() {
       a = b; b = r;
   }
   cout << last_gear->b/a << ' ' << last_gear->sign * last_gear->a/a << endl;
-
   return 0;
 }
 \end{lstlisting}
@@ -2886,6 +2832,7 @@ int main() {
 
 Задача на реализацию. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=C++]
 #include <iostream>
@@ -2897,16 +2844,13 @@ typedef struct {
     long cost;
     int id;
 } Card;
-bool cmp_suit(const Card &a, const Card &b)
-{
+bool cmp_suit(const Card &a, const Card &b) {
     return a.suit < b.suit;
 }
-bool cmp_cost(const Card &a, const Card &b)
-{
+bool cmp_cost(const Card &a, const Card &b) {
     return a.cost < b.cost;
 }
-int main()
-{
+int main() {
     int n;
     cin >> n;
     vector<Card> hand(n);
@@ -2979,8 +2923,7 @@ int main()
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main() {
     long x;
     scanf("%ld", &x); 
     long count = 0; 
@@ -2991,13 +2934,10 @@ int main()
         }
     } 
     long b1, q, n;
-    for (b1 = 1; b1 <= (x/3 + 1); b1++)
-    {
+    for (b1 = 1; b1 <= (x/3 + 1); b1++) {
         long q_max = ceil((double)x / b1) - 1;     
-        for (q = 2; q <= q_max; q++)
-        {
-            for (n = 2; n <= 100000; n++)
-            {
+        for (q = 2; q <= q_max; q++) {
+            for (n = 2; n <= 100000; n++) {
                 long s = (b1 * ((long)pow((double)q, (double)n) - 1)) / (q - 1);
                 if (s == x) {
                     count++;
@@ -3024,6 +2964,7 @@ int main()
 
 Задача решается с помощью конечного автомата, полученного при исследовании поведения строки при различных входных данных. \\
 
+\newpage
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
 n = gets.to_i
@@ -3064,40 +3005,31 @@ puts counter
 \textbf{{\large Алгоритм}}
 
 Задача на реализацию. \\
-\newpage
+
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Ruby]
 t = gets.to_i
-
 t.times do
     inp = gets.split(' ').map(&:to_i)
-
     n = inp.first
     x = inp.last
-
     first_class = true
     if n % 4 == 0 or (n + 1) % 4 == 0
         first_class = false
     end
-
     nums = []
-
     if first_class
-        #nums = (1..n).step(2).to_a
         if !x.even? and x <= n
             puts 'YES'
         else
             puts 'NO'
         end
     else
-        #nums = (0..n).step(2).to_a
         if x.even? and x <= n
             puts 'YES'
         else
             puts 'NO'
-        end
-    end
-end
+        end; end; end
 \end{lstlisting}
 
 
@@ -3111,35 +3043,29 @@ end
 \textbf{{\large Алгоритм}}
 
 Генерируем все варианты ответов с помощью перебора и вставляем в код конечной программы. \\
-\newpage
+
 \textbf{{\large Исходный код}} \\
 Генератор:
 \begin{lstlisting}[language=Ruby]
 n = gets.to_i
-
 if n < 10
     puts n
 else
-    count = 9
-    num = 10
+    count = 9; num = 10
     while true
-        good_num = true
-        num_as_str = num.to_s
+        good_num = true; num_as_str = num.to_s
         for i in 1...(num_as_str.size)
             digit_l = num_as_str[i - 1].to_i
             digit_r = num_as_str[i].to_i
             if (digit_r - digit_l).abs != 1
-                good_num = false
-                break
+                good_num = false; break
             end
         end
         if good_num
-            count = count + 1
-            print "#{num},"
+            count = count + 1; print "#{num},"
         end
         if count == n
-            puts num
-            break
+            puts num; break
         end
         num = num + 1
     end
@@ -3285,17 +3211,14 @@ public class Test {
 \textbf{{\large Алгоритм}}
 
 Задача на реализацию. Сложность $O(n)$. \\
-\newpage
+
 \textbf{{\large Исходный код}} \\
 \begin{lstlisting}[language=Java]
-import java.util.*;
 public class Test {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       int N = sc.nextInt();
-      double temp;
-      double S = 0;
-      double t = 0;      
+      double temp; double S = 0; double t = 0;      
       double arr[][] = new double[N][2];
       for(int i = 0; i < N; i++) {
           temp = sc.nextDouble();
@@ -3306,8 +3229,7 @@ public class Test {
           t += arr[i][0] / arr[i][1];
       }
       System.out.println(S/t);
-    }
-}
+    } }
 \end{lstlisting}
 
 
